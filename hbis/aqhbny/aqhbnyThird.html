@@ -1,0 +1,327 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>河钢集团办公系统</title>
+<link rel="stylesheet" href="/pagetemplate/index/res/reset.css">
+<link rel="stylesheet" href="/pagetemplate/index/res/style.css">
+<link rel="stylesheet" href="../base.css">
+<link rel="stylesheet" href="/indishare/oaresource.nsf/defaultTheme/defaultTheme.css">
+<link rel="stylesheet" href="/indishare/oaresource.nsf/defaultTheme/form.css">
+<script type="text/javascript" src="/dojo/dojo/dojo.js" djConfig="parseOnLoad:false"></script>
+<script type="text/javascript" src="/pagetemplate/index/res/init.js" charset='utf-8'></script>
+<script type="text/javascript" src="/indishare/oaresource.nsf/jslib/global.js"></script>
+<style type="text/css">
+<!--
+body {
+margin-left: 0px;
+margin-top: 0px;
+margin-right: 0px;
+margin-bottom: 0px;
+background-image: url();
+background-repeat: no-repeat;
+background-position: center 110px;
+}
+body,td,th {
+font-family: 微软雅黑;
+}
+.STYLE1 {
+color: #8aa0ae;
+font-size: 14px;
+}
+.STYLE2 {
+color: #566e7d;
+font-size: 14px;
+}
+.STYLE3 {
+color: #e6000a;
+font-size: 14px;
+}
+.STYLE4 {
+font-size: 16px;
+color: #879eac;
+font-weight: 500;
+}
+.STYLE7 {
+font-size: 16px;
+color: #FFFFFF;
+}
+.table_photo {
+height: 265px;
+width: 330px;
+background-image: url(/indishare/sitemaster.nsf/photonew.png);
+background-repeat: no-repeat;
+background-position: center center;
+}
+.STYLE10 {
+font-size: 14px;
+color: #FFFFFF;
+line-height: 22px;
+}
+.table_tv {
+height: 265px;
+width: 330px;
+background-image: url(/indishare/sitemaster.nsf/phototv.png);
+background-repeat: no-repeat;
+background-position: center center;
+}
+.STYLE14 {
+font-size: 14px;
+color: #b0b0b0;
+line-height: 26px;
+}
+a {
+font-family: 微软雅黑;
+}
+a:link {
+text-decoration: none;
+}
+a:visited {
+text-decoration: none;
+}
+a:hover {
+text-decoration: none;
+}
+a:active {
+text-decoration: none;
+}
+.table_ban {
+background-image: url(/indishare/sitemaster.nsf/er_bg1.jpg);
+background-repeat: no-repeat;
+background-position: center center;
+}
+.STYLE11 {
+font-size: 24px;
+font-weight: bold;
+color: #1a3444;
+}
+.STYLE15 {
+font-size: 14px;
+color: #FFFFFF;
+line-height: 22px;
+}
+.STYLE16 {
+font-size: 20px;
+color: #FFFFFF;
+}
+.STYLE17 {
+color: #606d77;
+font-weight: bold;
+}
+.STYLE7Copy {
+font-size: 16px;
+color: #FFFFFF;
+font-weight: bold;
+}
+.STYLE18 {
+font-size: 24px;
+color: #8b9da9;
+}
+.STYLE19 {
+font-size: 26px;
+color: #FFFFFF;
+}
+.STYLE20 {
+font-size: 14px;
+color: #606d77;
+}
+.STYLE21 {
+font-size: 14px;
+color: #adb5bb;
+}
+.STYLE22 {
+font-size: 14px;
+color: #505050;
+}
+.main {
+margin: 0px auto;
+}
+.framexw{
+margin: 0px auto;
+height:1100px;
+}
+-->
+</style>
+<script type="text/javascript" src="http://hq.sinajs.cn/list=sz000709" charset="gb2312"></script>
+<script type="text/javascript" src="http://hq.sinajs.cn/list=sz000923" charset="gb2312"></script>
+<script>
+function fnrestiframelocation(){
+//加载左侧导航
+dojo.place(dojo.query("[name^=strHtmlNav_xm]")[0].value,dojo.byId("tdLeftNav_xm"),"first");
+//2014-11-04 duyehui 解决session过期登录窗口变形问题
+var strhtmltag = document.getElementsByTagName("html")[0].className;
+document.getElementsByTagName("html")[0].className = "tundra " + strhtmltag;
+var ifrm = document.getElementsByName("secondsite")[0];
+var url = window.location.href;
+var docurl = getRefValue(url,"url=");
+if (docurl!=""){
+ifrm.src=docurl;
+}
+urlflag();
+}
+function changetitle(strTitle){
+	var ArrayTitle =["aqdt","sgzx","jcpj","yhpc","bzhjs","flfg","hbdt","jszx","zbdb"];
+	if(strTitle != ""){
+		for(var i=0;i<ArrayTitle.length;i++){
+			if(strTitle==ArrayTitle[i]){
+				if(dojo.byId(ArrayTitle[i]+"td1")){
+					dojo.byId(ArrayTitle[i]+"td1").bgColor="#5fafdd";
+					dojo.byId(ArrayTitle[i]+"td2").bgColor="#5fafdd";
+					dojo.byId(ArrayTitle[i]+"td3").bgColor="#5fafdd";
+					dojo.removeClass(dojo.byId(ArrayTitle[i]+"td2"),"STYLE7 STYLE17");
+					dojo.addClass(dojo.byId(ArrayTitle[i]+"td2"),"STYLE7Copy");
+				}
+			}else{
+				if(dojo.byId(ArrayTitle[i]+"td1")){
+					dojo.byId(ArrayTitle[i]+"td1").bgColor="#F8F8F8";
+					dojo.byId(ArrayTitle[i]+"td2").bgColor="#F8F8F8";
+					dojo.byId(ArrayTitle[i]+"td3").bgColor="#F8F8F8";
+					dojo.removeClass(dojo.byId(ArrayTitle[i]+"td2"),"STYLE7Copy");
+					dojo.addClass(dojo.byId(ArrayTitle[i]+"td2"),"STYLE7 STYLE17");
+				}
+			}
+	
+		}
+	}
+	
+}
+function urlflag(){
+var url = window.location.href;
+var flag = getRefValue(url,"flag=");
+var docurl = getRefValue(url,"url=")
+var ArrayTitle =["aqdt","sgzx","jcpj","yhpc","bzhjs","flfg","hbdt","jszx","zbdb"];
+if(flag != ""){
+changetitle(flag);
+}else{
+if(docurl != ""){
+for(var i=0;i<ArrayTitle.length;i++){
+if (docurl.indexOf(ArrayTitle[i]+".nsf")>0){
+changetitle(ArrayTitle[i]);
+}
+}
+}
+}
+}
+function gotoUrl(url){
+window.location=url;
+}
+</script>
+<body onLoad="fnrestiframelocation()"> 
+  <table border="0" cellspacing="0" cellpadding="0" width="100%">
+   <tbody>
+    <tr>
+     <td></td>
+     <td align="middle">
+      <table border="0" cellspacing="0" cellpadding="0" width="1000">
+       <tbody>
+        <tr>
+         <td width="297"></td>
+         <td style="TEXT-ALIGN: right" width="393"></td>
+         <td valign="top" width="310">
+          <table border="0" cellspacing="0" cellpadding="0" width="325">
+           <tbody>
+            <tr>
+             <td width="106" align="right"><a href="/indishare/sitemaster.nsf/(page)/HBIS?open" target="_self"><span class="STYLE2">集团网站</span></a></td>
+             <td width="137" align="right">
+              <nobr>
+               <span class="STYLE1"><img src="/indishare/sitemaster.nsf/user.png" width="13" height="15" /> <span id="logininfo"></span>，您好！ <a style="COLOR: rgb(119,136,153)" href="/names.nsf?logout">[退出]</a> </span>
+              </nobr></td>
+            </tr>
+           </tbody>
+          </table></td>
+        </tr>
+        <tr>
+         <td height="60" align="left"><img src="/indishare/sitemaster.nsf/logo.png" width="273" height="37" /> </td>
+         <td style="PADDING-BOTTOM: 10px; VERTICAL-ALIGN: bottom" colspan="2" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="STYLE4"><a style="COLOR: rgb(119,136,153); TEXT-DECORATION: none" href="/indishare/sitemaster.nsf/(page)/aqhbny" target="_self">首页</a> &nbsp;&nbsp;&nbsp;&nbsp; <a style="COLOR: rgb(119,136,153); TEXT-DECORATION: none" href="/indishare/office.nsf/" target="_blank">协同办公</a> &nbsp;&nbsp;&nbsp;&nbsp; <a style="COLOR: rgb(119,136,153); TEXT-DECORATION: none"  onclick="fndzyj()" href="javascript:void(0)">邮件系统</a> &nbsp;&nbsp;&nbsp;&nbsp; <a style="COLOR: rgb(119,136,153); TEXT-DECORATION: none" href="/indishare/sitemaster.nsf/(page)/aqhbnySecond?opendocument&amp;database=hebgt/aqhbny/aqdt.nsf&amp;view=vwWebFlowForShow&amp;path=1&amp;flag=aqdt&amp;type_xm=aqbk" target="_self">安全版块</a> &nbsp;&nbsp;&nbsp;&nbsp;<a style="COLOR: rgb(119,136,153); TEXT-DECORATION: none" href="/indishare/sitemaster.nsf/(page)/aqhbnySecond?opendocument&amp;database=hebgt/aqhbny/hbdt.nsf&amp;view=vwWebFlowForShow&amp;path=1&amp;flag=hbdt&amp;type_xm=hbbk" target="_self">环保版块</a> </span></td>
+        </tr>
+       </tbody>
+      </table></td>
+     <td></td>
+    </tr>
+   </tbody>
+  </table>
+  <table border="0" cellspacing="0" cellpadding="0" width="100%" align="center">
+   <tbody>
+    <tr>
+     <td bgcolor="#a0b2bb" height="5"></td>
+    </tr>
+   </tbody>
+  </table>
+  <table class="table_ban" border="0" cellspacing="0" cellpadding="0" width="100%" background="/indishare/sitemaster.nsf/er_bg.jpg" align="center">
+   <tbody>
+    <tr>
+     <td height="85" background="/indishare/sitemaster.nsf/er_bg.jpg" align="middle">
+      <table class="table_ban" border="0" cellspacing="0" cellpadding="0" width="100%">
+       <tbody>
+        <tr>
+         <td height="85"></td>
+        </tr>
+       </tbody>
+      </table></td>
+    </tr>
+   </tbody>
+  </table>
+  <table border="0" cellspacing="0" cellpadding="0" width="100%" align="center">
+   <tbody>
+    <tr>
+     <td height="1"></td>
+    </tr>
+   </tbody>
+  </table>
+  <table border="0" cellspacing="0" cellpadding="0" width="1000" align="center">
+   <tbody>
+    <tr>
+     <td height="2"></td>
+    </tr>
+   </tbody>
+  </table>
+  <table border="0" cellspacing="0" cellpadding="0" width="100%" align="center" height="1100">
+   <tbody>
+    <tr>
+     <td></td>
+     <td align="middle">
+      <table border="0" cellspacing="0" cellpadding="0" width="1000">
+       <tbody>
+        <tr>
+         <td height="467" valign="top" width="190" align="middle">
+          <div id="tdLeftNav_xm"></div></td>
+         <td width="40"></td>
+         <td valign="top" width="770">
+          <div class="framexw">
+           <iframe style="MIN-HEIGHT: 1100px; WIDTH: 770px; OVERFLOW: hidden" src="" frameborder="0" name="secondsite" scrolling="no"> </iframe>
+          </div></td>
+        </tr>
+       </tbody>
+      </table></td>
+     <td></td>
+    </tr>
+   </tbody>
+  </table>
+  <table border="0" cellspacing="0" cellpadding="0" width="1000" align="center">
+   <tbody>
+    <tr>
+     <td height="1"></td>
+    </tr>
+   </tbody>
+  </table>
+  <table border="0" cellspacing="0" cellpadding="0" width="100%" bgcolor="#879fac" align="center">
+   <tbody>
+    <tr>
+     <td></td>
+     <td align="middle">
+      <table border="0" cellspacing="0" cellpadding="0" width="1000">
+       <tbody>
+        <tr>
+        <td style="PADDING-BOTTOM: 10px; VERTICAL-ALIGN: bottom" colspan="2" align="right"><span class="STYLE4"><a style="COLOR: rgb(119,136,153); TEXT-DECORATION: none" href="/indishare/sitemaster.nsf/(page)/aqhbny" target="_self">首页</a> &nbsp;&nbsp;&nbsp;&nbsp; <a style="COLOR: rgb(119,136,153); TEXT-DECORATION: none" href="/indishare/office.nsf/" target="_blank">协同办公</a> &nbsp;&nbsp;&nbsp;&nbsp; <a style="COLOR: rgb(119,136,153); TEXT-DECORATION: none" href="http://csmail.hbisco.com" target="_blank">邮件系统</a> &nbsp;&nbsp;&nbsp;&nbsp; <a style="COLOR: rgb(119,136,153); TEXT-DECORATION: none" href="/indishare/sitemaster.nsf/(page)/aqhbnySecond?opendocument&amp;database=HBIS/aqhbny/aqdt.nsf&amp;view=vwWebFlowForShow&amp;path=1&amp;flag=aqdt&amp;type_xm=aqbk" target="_self">安全版块</a> &nbsp;&nbsp;&nbsp;&nbsp;<a style="COLOR: rgb(119,136,153); TEXT-DECORATION: none" href="/indishare/sitemaster.nsf/(page)/aqhbnySecond?opendocument&amp;database=HBIS/aqhbny/hbdt.nsf&amp;view=vwWebFlowForShow&amp;path=1&amp;flag=hbdt&amp;type_xm=hbbk" target="_self">环保版块</a> </span></td>
+        </tr>
+       </tbody>
+      </table></td>
+     <td></td>
+    </tr>
+   </tbody>
+  </table>
+  <table border="0" cellspacing="0" cellpadding="0" width="100%" align="center">
+   <tbody>
+    <tr>
+     <td height="80" align="middle"><span class="STYLE14">Copyright 2016 河钢铁集团有限公司 All Rights Reserved. <br />建议使用 IE11版本,1600X900分辨率浏览使用. </span></td>
+    </tr>
+   </tbody>
+  </table>
+

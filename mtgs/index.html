@@ -1,0 +1,604 @@
+﻿<!DOCTYPE html >
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>中天合创煤炭分公司</title>
+<style type="text/css">
+<!--
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	background-image: url(images/index1_02.gif);
+	background-repeat: repeat-x;
+}
+.STYLE1 {
+	color: #0048a0;
+	font-size: 14px;
+	font-weight: normal;
+	letter-spacing: 1px;
+      text-decoration:none;
+      cursor:pointer;
+}
+.STYLE2 {
+	font-size: 14px;
+	color: #FFFFFF;
+	font-weight: normal;
+}
+.STYLE3 {
+	color: #0049a4;
+	font-size: 14px;
+	font-weight: normal;
+}
+.STYLE4 {
+  color: #00387e;
+  font-size: 12px;
+}
+.STYLE5 {
+	font-size: 12px;
+	color: #4d4d4d;
+}
+body,td,th {
+	font-family: 微软雅黑;
+}
+.STYLE8 {
+	font-size: 12px;
+	color: #FFFFFF;
+}
+#imgbanner{
+  position:absolute;
+  width:240px;
+  height:182px;
+  overflow: hidden;
+  margin-left: 18px;
+  margin-top: 8px;
+}
+.imgList{
+  position:relative;
+  width:240px;
+  height:182px;
+  z-index: 10;
+}
+.imgList a{
+  text-decoration: none; 
+  color: white;
+}
+.imgList a img{
+  border:0 none;
+}
+#prev,#next{
+  position: absolute;
+  bottom:7px;
+  z-index: 30;
+  cursor: pointer;
+}
+#prev{
+  left: 7px;
+}
+#next{
+  right: 7px;
+}
+.imgbg{
+  position: absolute;
+  bottom: 0;
+  width: 240px;
+  height: 30px;
+  z-index:20;
+  opacity: 0.4;
+  filter:alpha(opacity=40);
+  background: black;
+}
+.infoList{
+  position: absolute;
+  left: 20px;
+  bottom: 7px;
+  z-index: 30;
+  color: white;
+  width:200px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  vertical-align: middle;
+}
+#gsxw{
+  width: 415px;
+  position: absolute;
+  right: 10px;
+  top: 8px;
+}
+ul.xwdata{
+  margin: 0px;
+  padding:0px;
+  padding-left: 12px;
+}
+ul.xwdata li{
+  height:26px;
+  list-style:none;
+  list-style-image : url(images/index1_69.gif);
+}
+.xwtitle {
+  font-size: 12px;
+  color: #4d4d4d;
+  width:320px;
+  display: inline-block;
+  text-align: left;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  vertical-align: middle;
+}
+.xwdate{
+  font-size: 12px;
+  color: #4d4d4d;
+  width:74px;
+  text-align: right;
+  display: inline-block;
+  white-space: nowrap;
+}
+#gsgg{
+  width: 202px;
+  position: absolute;
+  left: 20px;
+  top: 8px;
+}
+ul.ggdata{
+  margin: 0px;
+  padding:0px;
+}
+ul.ggdata li{
+  height:30px;
+  list-style:none;
+  list-style-image : url(images/index1_98.gif);
+}
+.ggtitle {
+    font-size: 12px;
+    color: #4d4d4d;
+    width: 202px;
+    display: inline-block;
+    text-align: left;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    vertical-align: middle;
+}
+#news{
+  width: 286px;
+  position: absolute;
+  left: 30px;
+  top: 8px;
+}
+ul.data{
+  margin: 0px;
+  padding:0px;
+}
+ul.data li{
+  height:25px;
+  list-style:none;
+  list-style-image : url(images/index1_98.gif);
+}
+.doctitle{
+    font-size: 12px;
+    color: #4d4d4d;
+    width: 260px;
+    display: inline-block;
+    text-align: left;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    vertical-align: middle;
+}
+.footer {
+    color: #00387e;
+    font-size: 12px;
+    width: 951px;
+    height: 40px;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 5px;
+}
+-->
+</style>
+<script type="text/javascript">
+<!--
+function getClassNames(classStr,tagName){  
+      if (document.getElementsByClassName) {  
+            return document.getElementsByClassName(classStr)  
+      }else {  
+            var nodes = document.getElementsByTagName(tagName),ret = [];           
+            for(i = 0; i < nodes.length; i++) {  
+         if(hasClass(nodes[i],classStr)){  
+                ret.push(nodes[i])  
+         }  
+      }  
+      return ret;  
+       }  
+}  
+function hasClass(tagStr,classStr){  
+     var arr=tagStr.className.split(/\s+/ );  //这个正则表达式是因为class可以有多个,判断是否包含  
+     for (var i=0;i<arr.length;i++){  
+            if (arr[i]==classStr){  
+                  return true ;  
+            }  
+     }  
+     return false ;  
+} 
+//轮播图片
+dojo.addOnLoad(function(){
+  getClassNames("imgList","div")[0].innerHTML = "<a href='#'><img src='images/bkg01.png' width='240px' height='182px' alt='puss in boots0'></a>";
+  getClassNames("infoList","div")[0].innerHTML = "puss in boots1puss in boots1puss in boots1puss in boots1puss in boots1";
+});
+var curIndex = 0; //当前index
+ //左右切换处理函数
+function changeTo(num) {
+    //设置image
+    getClassNames("imgList","div")[0].innerHTML = "<a href='#'><img src='images/bkg0" + (num + 1) +
+        ".png' width='242px' height='182px' alt='puss in boots" + num + "'></a>";
+    getClassNames("infoList","div")[0].innerHTML = "puss in boots" + (num+1);
+}
+ //定时器自动变换2.5秒每次
+var autoChange = setInterval(function () {
+    if (curIndex < 4) {
+        curIndex++;
+    } else {
+        curIndex = 0;
+    }
+    //调用变换处理函数
+    changeTo(curIndex);
+    addEvent();
+    //调用变换处理函数 
+}, 2000);
+ 
+ //清除定时器时候的重置定时器--封装
+function autoChangeAgain() {
+    autoChange = setInterval(function () {
+        if (curIndex < 4) {
+            curIndex++;
+        } else {
+            curIndex = 0;
+        }
+        //调用变换处理函数
+        changeTo(curIndex);
+    }, 2000);
+}
+
+function addEvent() {
+    //给左箭头prev添加上一个事件
+    var prev = document.getElementById("prev");
+    prev.onmouseover = function () {
+        //滑入清除定时器
+        clearInterval(autoChange);
+    };
+    prev.onclick = function () {
+        //根据curIndex进行上一个图片处理
+        curIndex = (curIndex > 0) ? (--curIndex) : 4;
+        changeTo(curIndex);
+    };
+    prev.onmouseout = function () {
+        //滑出则重置定时器
+        autoChangeAgain();
+    };
+ 
+    //给右箭头next添加下一个事件
+    var next = document.getElementById("next");
+    next.onmouseover = function () {
+        clearInterval(autoChange);
+    };
+    next.onclick = function () {
+        curIndex = (curIndex < 4) ? (++curIndex) : 0;
+        changeTo(curIndex);
+    };
+    next.onmouseout = function () {
+        autoChangeAgain();
+    };
+}
+function openwin(url) {
+    var a = document.createElement("a");
+    a.setAttribute("href", url);
+    a.setAttribute("target", "_blank");
+    a.setAttribute("id", "openwin");
+    document.body.appendChild(a);
+    a.click();
+}
+-->  
+</script>
+</head>
+
+<body>
+<table width="960" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="668" height="79"><img src="images/logo.png" width="555" height="53"></td>
+    <td width="292" >&nbsp;</td>
+  </tr>
+</table>
+<table width="960" border="0" align="center" cellpadding="0" cellspacing="0" background="images/index1_09.gif">
+  <tr>
+    <td width="6"><img src="images/index1_08.gif" width="6" height="34" alt=""></td>
+    <td width="80" align="center" class="STYLE1" onclick= "openwin('#')">首 页</td>
+    <td width="2" align="center"><img src="images/index1_11.gif" width="2" height="35" alt=""></td>
+    <td align="center" class="STYLE1" onclick= "openwin('#')">公司概况</td>
+    <td width="2" align="center" ><img src="images/index1_11.gif" width="2" height="35" alt=""></td>
+    <td align="center" class="STYLE1" onclick= "openwin('#')">新闻中心</td>
+    <td width="2" align="center"><img src="images/index1_11.gif" width="2" height="35" alt=""></td>
+    <td align="center" class="STYLE1" onclick= "openwin('#')">大事记</td>
+    <td width="2" align="center"><img src="images/index1_11.gif" width="2" height="35" alt=""></td>
+    <td align="center" class="STYLE1" onclick= "openwin('#')">企业文化</td>
+    <td width="2" align="center"><img src="images/index1_11.gif" width="2" height="35" alt=""></td>
+    <td align="center" class="STYLE1" onclick= "openwin('#')">厂务公开</td>
+    <td width="2" align="center"><img src="images/index1_11.gif" width="2" height="35" alt=""></td>
+    <td align="center" class="STYLE1" onclick= "openwin('#')">产业与服务</td>
+    <td width="2" align="center"><img src="images/index1_11.gif" width="2" height="35" alt=""></td>
+    <td align="center" class="STYLE1" onclick= "openwin('#')">科技创新</td>
+    <td width="2" align="center"><img src="images/index1_11.gif" width="2" height="35" alt=""></td>
+    <td align="center" class="STYLE1" onclick= "openwin('#')">企业论坛</td>
+    <td width="6"><img src="images/index1_14.gif" width="6" height="34" alt=""></td>
+  </tr>
+</table>
+<table width="960" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="eef3f9">
+  <tr>
+    <td height="2"></td>
+  </tr>
+</table>
+<table width="960" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="960" height="118" >
+    <object id='player' classid='clsid:D27CDB6E-AE6D-11cf-96B8-444553540000' width='960' height='198'  codebase='http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0'>
+    <param name='name' value='player' />
+    <param name='allowfullscreen' value='true' />
+    <param name='allowscriptaccess' value='always' />
+    <param name='Scale' value='NoScale'>
+    <param name='wmode' value='opaque' />
+    <param name='flashvars' value='images/web_f.swf' />
+    <param name='src' value='images/web_f.swf' />
+    <embed id='player' type='application/x-shockwave-flash' width='960' height='198' src='images/web_f.swf' flashvars='images/web_f.swf' allowscriptaccess='always' allowfullscreen='true' name='player'>
+    </embed>
+    </object>
+    </td>
+  </tr>
+</table>
+<table width="960" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td height="25" background="images/index1_21.gif">&nbsp;</td>
+  </tr>
+</table>
+<table width="960" height="161" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="705" valign="top">
+      <div style="height:28px;width:705px;background:url(images/index1_24.gif);position: relative;">
+        <img src="images/index1_23.gif" width="23" height="28" alt="">
+        <div class="STYLE2" style="position: absolute;left: 24px;top: 4px;">公司新闻</div>
+        <a href="http://www.baidu.com" target="_blank"><img src="images/more.gif" width="44" height="13" style="position: absolute;right: 10px;top: 8px;border:0px none;"></a>
+        <img src="images/index1_26.gif" width="9" height="28" style="position: absolute;right: 0;" alt="">
+      </div>
+      <div style="height:200px;width:705px;background:url(images/index1_36.gif);position: relative;">
+        <div id="imgbanner"><!-- 轮播部分 -->
+                  <div class="imgList"></div><!-- 图片部分 -->  
+                  <div class="imgbg"> </div> <!-- 图片底部背景层部分-->
+                  <img src="images/preve.png" width="11px" height="18px" id="prev">
+                  <div class="infoList"></div><!-- 图片title部分 -->
+                  <img src="images/next.png" width="11px" height="18px" id="next">
+         </div>
+         <div id="gsxw">
+           <ul  class="xwdata" style="behavior: url(/indishare/indiofficeres.nsf/ulview.htc);" title="数据源yg1data"
+                  fldACL="1" indiuldata="server=www.zthcgs.com~~database=zthcgs/ygsh.nsf~~view=vwPublicedByCatforfirstsite~~dispvw=vwPublicedByCatforfirstsite~~start=1~~count=7~~mincount=7~~ColsTitle=标题,日期~~ColsIn=$66,$54~~ColsLinkOpen=2,2~~ColsCut=40,10~~thirdpage=%thirdpage%~~cat=2~~category=1code"
+                  modified="true" jsDsName="yg1data">
+            <li><span class="xwtitle"></span><span class="xwdate"></span></li>
+            <li><span class="xwtitle"></span><span class="xwdate"></span></li>
+            <li><span class="xwtitle"></span><span class="xwdate"></span></li>
+            <li><span class="xwtitle"></span><span class="xwdate"></span></li>
+            <li><span class="xwtitle"></span><span class="xwdate"></span></li>
+            <li><span class="xwtitle"></span><span class="xwdate"></span></li>
+            <li><span class="xwtitle"></span><span class="xwdate"></span></li>
+           </ul>
+           </div>
+        <img src="images/index1_44.gif" width="705" height="3" alt="" style="position: absolute;bottom: 0;">
+      </div>
+    </td>
+    <td width="22">&nbsp;</td>
+    <td valign="top" width="233">
+      <div style="height:28px;width:233px;background:url(images/index1_29.gif);position: relative;">
+        <img src="images/index1_28.gif" width="29" height="30" alt="">
+        <div class="STYLE3" style="position: absolute;left: 30px;top: 4px;">公司公告</div>
+        <a href="http://www.baidu.com" target="_blank"><img src="images/more.gif" width="44" height="13" style="position: absolute;right: 6px;top: 8px;border:0px none;"></a>
+        <img src="images/index1_31.gif" width="6" height="30" style="position: absolute;right: 0;" alt="">
+      </div>
+      <div style="height:198px;width:233px;background:url(images/index1_38.gif);position: relative;">
+         <div id="gsgg">
+           <ul  class="ggdata">
+            <li><span class="ggtitle"></span></li>
+            <li><span class="ggtitle"></span></li>
+            <li><span class="ggtitle"></span></li>
+            <li><span class="ggtitle"></span></li>
+            <li><span class="ggtitle"></span></li>
+            <li><span class="ggtitle"></span></li>
+           </ul>
+           </div>
+        <img src="images/index1_45.gif" width="233" height="3" alt="" style="position: absolute;bottom: 0;">
+      </div>
+    </td>
+  </tr>
+</table>
+<table width="960" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td height="22">&nbsp;</td>
+  </tr>
+</table>
+<table width="960" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="240" valign="top">
+    <div style="height:29px;width:240px;background:url(images/index1_49.gif);position: relative;">
+        <img src="images/index1_48.gif" width="31" height="29" alt="">
+        <div class="STYLE2" style="position: absolute;left: 31px;top: 4px;">企业荣誉</div>
+        <a href="http://www.baidu.com" target="_blank"><img src="images/more.gif" width="44" height="13" style="position: absolute;right: 6px;top: 8px;border:0px none;"></a>
+        <img src="images/index1_51.gif" width="6" height="29" style="position: absolute;right: 0;" alt="">
+      </div>
+      <div style="height:200px;width:240px;background:url(images/index1_61.gif);position: relative;">
+         <img src="images/jx.gif" width="230" height="182" alt="" style="margin:5px;">
+        <img src="images/index1_77.gif" width="240" height="3" alt="" style="position: absolute;bottom: 0;left:0;">
+      </div>
+    </td>
+    <td width="22" valign="top">&nbsp;</td>
+    <td width="443" valign="top">
+    <div style="height:28px;width:443px;background:url(images/index1_54.gif);position: relative;">
+        <img src="images/index1_53.gif" width="23" height="28" alt="">
+        <div class="STYLE3" style="position: absolute;left: 24px;top: 4px;">行业动态</div>
+        <a href="http://www.baidu.com" target="_blank"><img src="images/more.gif" width="44" height="13" style="position: absolute;right: 10px;top: 8px;border:0px none;"></a>
+        <img src="images/index1_56.gif" width="9" height="28" style="position: absolute;right: 0;" alt="">
+      </div>
+      <div style="height:200px;width:443px;background:url(images/index1_63.gif);position: relative;">
+         <div id="gsxw">
+           <ul  class="xwdata" >
+            <li><span class="xwtitle"></span><span class="xwdate"></span></li>
+            <li><span class="xwtitle"></span><span class="xwdate"></span></li>
+            <li><span class="xwtitle"></span><span class="xwdate"></span></li>
+            <li><span class="xwtitle"></span><span class="xwdate"></span></li>
+            <li><span class="xwtitle"></span><span class="xwdate"></span></li>
+            <li><span class="xwtitle"></span><span class="xwdate"></span></li>
+            <li><span class="xwtitle"></span><span class="xwdate"></span></li>
+           </ul>
+           </div>
+        <img src="images/index1_44.gif" width="443" height="3" alt="" style="position: absolute;bottom: 0;">
+      </div>
+    </td>
+    <td width="22" valign="top">&nbsp;</td>
+    <td valign="top" width="233">
+      <div style="height:28px;width:233px;background:url(images/index1_29.gif);position: relative;">
+        <img src="images/index1_28.gif" width="29" height="30" alt="">
+        <div class="STYLE3" style="position: absolute;left: 30px;top: 4px;">专业系统</div>
+        <img src="images/index1_31.gif" width="6" height="30" style="position: absolute;right: 0;" alt="">
+      </div>
+      <div style="height:198px;width:233px;background:url(images/index1_38.gif);position: relative;">
+         <table border="0" align="center" cellpadding="0" cellspacing="0" style="padding-top: 20px;">
+            <tr>
+              <td height="22"><a href="http://www.baidu.com" target="_blank"><img src="images/index1_66.gif" width="210" height="40" alt="" style="border:0px none;"></a></td>
+              </tr>
+            <tr>
+              <td height="12"></td>
+              </tr>
+            <tr>
+              <td height="22"><img src="images/index1_73.gif" width="210" height="40" alt=""></td>
+              </tr>
+            <tr>
+              <td height="12"></td>
+              </tr>
+            <tr>
+              <td height="22"><img src="images/index1_75.gif" width="210" height="40" alt=""></td>
+              </tr>
+            
+        </table>
+        <img src="images/index1_45.gif" width="233" height="3" alt="" style="position: absolute;bottom: 0;">
+      </div>
+    </td>
+  </tr>
+</table>
+<table width="960" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td height="22">&nbsp;</td>
+  </tr>
+</table>
+<div style="width:960px;height:127px;margin:auto;padding:0;position: relative;">
+      <div style="width:4px;height:127px;display: inline-block;background:url(images/index1_81.gif);position: absolute;left:0;"></div>
+      <div style="width:951px;height:127px;display: inline-block;background:url(images/index1_82.gif);position: absolute;left:4px;"><img src="images/jx.gif" width="150" height="100" style="margin:10px;"><img src="images/jx.gif" width="150" height="100" style="margin:10px;"><img src="images/jx.gif" width="150" height="100" style="margin:10px;"><img src="images/jx.gif" width="150" height="100" style="margin:10px;"><img src="images/jx.gif" width="150" height="100" style="margin:10px;"></div>
+      <div style="width:5px;height:127px;display: inline-block;background:url(images/index1_85.gif);position: absolute;right:0;"></div>
+</div>
+<table width="960" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td height="22">&nbsp;</td>
+  </tr>
+</table>
+<table width="960" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td valign="top" >
+    <div style="height:28px;width:306px;background:url(images/index1_89.gif);position: relative;">
+        <img src="images/index1_88.gif" width="36" height="30" alt="">
+        <div class="STYLE3" style="position: absolute;left: 37px;top: 6px;">时政要闻</div>
+        <a href="http://www.baidu.com" target="_blank"><img src="images/more_1.gif" width="32" height="7" style="position: absolute;right: 12px;top: 14px;border:0px none;"></a>
+        <img src="images/index1_92.gif" width="12" height="30" style="position: absolute;right: 0;" alt="">
+      </div>
+      <div style="height:198px;width:306px;background:url(images/index1_95.gif);position: relative;">
+         <div id="news">
+           <ul  class="data" >
+            <li><span class="doctitle"></span></li>
+            <li><span class="doctitle"></span></li>
+            <li><span class="doctitle"></span></li>
+            <li><span class="doctitle"></span></li>
+            <li><span class="doctitle"></span></li>
+            <li><span class="doctitle"></span></li>
+            <li><span class="doctitle"></span></li>
+           </ul>
+           </div>
+        <img src="images/index1_101.gif" width="306" height="9" alt="" style="position: absolute;bottom: 0;">
+      </div>
+    </td>
+    <td width="22" valign="top">&nbsp;</td>
+    <td valign="top">
+      <div style="height:28px;width:306px;background:url(images/index1_89.gif);position: relative;">
+        <img src="images/index1_88.gif" width="36" height="30" alt="">
+        <div class="STYLE3" style="position: absolute;left: 37px;top: 6px;">政策法规</div>
+        <a href="http://www.baidu.com" target="_blank"><img src="images/more_1.gif" width="32" height="7" style="position: absolute;right: 12px;top: 14px;border:0px none;"></a>
+        <img src="images/index1_92.gif" width="12" height="30" style="position: absolute;right: 0;" alt="">
+      </div>
+      <div style="height:198px;width:306px;background:url(images/index1_95.gif);position: relative;">
+         <div id="news">
+           <ul  class="data" >
+            <li><span class="doctitle"></span></li>
+            <li><span class="doctitle"></span></li>
+            <li><span class="doctitle"></span></li>
+            <li><span class="doctitle"></span></li>
+            <li><span class="doctitle"></span></li>
+            <li><span class="doctitle"></span></li>
+            <li><span class="doctitle"></span></li>
+           </ul>
+           </div>
+        <img src="images/index1_101.gif" width="306" height="9" alt="" style="position: absolute;bottom: 0;">
+      </div>
+    </td>
+    <td width="22" valign="top">&nbsp;</td>
+    <td valign="top">
+      <div style="height:28px;width:306px;background:url(images/index1_89.gif);position: relative;">
+        <img src="images/index1_88.gif" width="36" height="30" alt="">
+        <div class="STYLE3" style="position: absolute;left: 37px;top: 6px;">媒体聚焦</div>
+        <a href="http://www.baidu.com" target="_blank"><img src="images/more_1.gif" width="32" height="7" style="position: absolute;right: 12px;top: 14px;border:0px none;"></a>
+        <img src="images/index1_92.gif" width="12" height="30" style="position: absolute;right: 0;" alt="">
+      </div>
+      <div style="height:198px;width:306px;background:url(images/index1_95.gif);position: relative;">
+         <div id="news">
+           <ul  class="data" >
+            <li><span class="doctitle"></span></li>
+            <li><span class="doctitle"></span></li>
+            <li><span class="doctitle"></span></li>
+            <li><span class="doctitle"></span></li>
+            <li><span class="doctitle"></span></li>
+            <li><span class="doctitle"></span></li>
+            <li><span class="doctitle"></span></li>
+           </ul>
+           </div>
+        <img src="images/index1_101.gif" width="306" height="9" alt="" style="position: absolute;bottom: 0;">
+      </div>
+    </td>
+  </tr>
+</table>
+<table width="960" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td height="20">&nbsp;</td>
+  </tr>
+</table>
+<div style="width:960px;height:40px;margin:auto;padding:0;position: relative;">
+      <div style="width:5px;height:40px;display: inline-block;background:url(images/index1_103.gif);position: absolute;left:0;"></div>
+      <div style="width:951px;height:40px;display: inline-block;background:url(images/index1_104.gif);position: absolute;left:4px;"><div class="footer" >Copyright &copy; 2016&nbsp;&nbsp;中天合创能源有限责任公司煤炭分公司&nbsp;&nbsp; All Rights Reserved.</div></div>
+      <div style="width:5px;height:40px;display: inline-block;background:url(images/index1_106.gif);position: absolute;right:0;"></div>
+</div>
+<table width="960" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td height="10" colspan="3"></td>
+  </tr>
+  <tr>
+    <td colspan="3" align="center" class="STYLE4">为取得最佳的浏览效果,请您使用IE10或以上版本 1024×768 的分辨率浏览本站</td>
+  </tr>
+  <tr>
+    <td height="30" colspan="3" align="center" class="STYLE4">&nbsp;</td>
+  </tr>
+</table>
+</body>
+</html>

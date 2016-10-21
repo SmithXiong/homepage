@@ -1,0 +1,1276 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>河钢集团办公系统</title>
+<style type="text/css">
+<!--
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	background-image: url(images/bg.png);
+	background-repeat: no-repeat;
+	background-position: center 110px;
+}
+body,td,th {
+	font-family: 微软雅黑;
+}
+.STYLE1 {
+	color: #8aa0ae;
+	font-size: 14px;
+}
+.STYLE2 {
+	color: #566e7d;
+	font-size: 14px;
+}
+.STYLE3 {
+	color: #e6000a;
+	font-size: 14px;
+}
+.STYLE4 {
+	font-size: 16px;
+	color: #879eac;
+	font-weight: 500;
+}
+.STYLE5 {
+	color: #313a3f;
+	font-size: 28px;
+	font-weight: bold;
+}
+.STYLE6 {
+	font-size: 20px;
+	color: ##313a3f;
+	font-style: italic;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.STYLE7 {
+	font-size: 16px;
+	color: #FFFFFF;
+}
+.table_photo {
+	height: 265px;
+	width: 330px;
+	background-image: url(images/photonew.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+.STYLE8 {
+	font-size: 20px;
+	color: #313a3f;
+}
+.STYLE9 {font-size: 16px}
+.STYLE10 {
+	font-size: 14px;
+	color: #FFFFFF;
+	line-height: 22px;
+}
+.STYLE11 {
+	font-size: 14px;
+	color: #6d8695;
+}
+.table_tv {
+	height: 265px;
+	width: 330px;
+	/*background-image: url(images/phototv.png);
+	background-repeat: no-repeat;
+	background-position: center center;*/
+}
+.STYLE12 {
+	font-size: 18px;
+	color: #566e7d;
+	font-weight: 500;
+}
+.STYLE14 {
+	font-size: 14px;
+	color: #b0b0b0;
+	line-height: 26px;
+}
+a {
+	font-family: 微软雅黑;
+}
+a:link {
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+a:active {
+	text-decoration: none;
+}
+-->
+.zfgsdv{
+    position: fixed;
+    top: 90px;
+    width:100%;
+    z-index: 100;
+}
+.zfgstb{
+    background-color: #FFFFFF;
+    font-size: 16px;
+}
+.zfgstb td{
+    background-color: #C8CFD1;
+    color: red;
+    width: 110px;
+    text-align: center;
+}
+</style>
+<script type="text/javascript" src="/dojo/dojo/dojo.js" djConfig="parseOnLoad:true"></script>
+<script charset="utf-8"  language="JavaScript" src="../test.js" ></script>
+<script language="javascript" type="text/javascript">   
+<!--  
+function fnchangedv(){
+    if(document.getElementById("zfgsdv").style.display=="none"){
+        document.getElementById("zfgsdv").style.display="";
+    }else{
+        document.getElementById("zfgsdv").style.display="none";
+    }
+} 
+function scroll(obj) {   
+var tmp = (obj.scrollTop)++;    
+if (obj.scrollTop==tmp) obj.innerHTML += obj.innerHTML;     
+}   
+setInterval("scroll(document.getElementById('scrollobj'))",50);   
+//jtyw1 spxw gggs3 shicdt scdt-->  
+</script>  
+</head>
+<body>
+<table border="0" cellSpacing="0" cellPadding="0" width="100%" bgColor="#ffffff">
+  <tbody>
+    <tr>
+      <td>
+      </td>
+      <td align="middle">
+        <table border="0" cellSpacing="0" cellPadding="0" width="1000">
+          <tbody>
+            <tr>
+              <td width="297">
+              </td>
+              <td style="text-align: right;" width="393">
+                <a href="http://www.hbisco.com" target="_blank">
+                  <span class="STYLE2">
+                    集团网站
+                  </span>
+                </a>
+              </td>
+              <td vAlign="top" width="310">
+                <table border="0" cellSpacing="0" cellPadding="0" width="325">
+                  <tbody>
+                    <tr>
+                      <td width="106" align="right">
+                        <div style="width: 106px; height: 20px; overflow: hidden;" id="scrollobj">
+                          <a href="http://finance.sina.com.cn/realstock/company/sz000709/nc.shtml"
+                          target="_blank">
+                            <span class="STYLE2">
+                              河钢股份
+                              <span id="gpjg" class="STYLE3">
+                                2.98
+                              </span>
+                            </span>
+                          </a>
+                          <br>
+                          <a href="http://finance.sina.com.cn/realstock/company/sz000923/nc.shtml"
+                          target="_blank">
+                            <span class="STYLE2">
+                              河北宣工
+                              <span id="gpjg2" class="STYLE3">
+                                3.98
+                              </span>
+                            </span>
+                          </a>
+                          <br>
+                        </div>
+                      </td>
+                      <td width="137" align="right">
+                        <nobr>
+                          <span class="STYLE1">
+                            <img src="/indishare/sitemaster.nsf/user.png" width="13" height="15">
+                            <span id="logininfo">
+                            </span>
+                            ，您好！
+                            <a style="color: rgb(119, 136, 153); text-decoration: none;" href="/names.nsf?logout">
+                              [退出]
+                            </a>
+                          </span>
+                        </nobr>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td height="60" align="left">
+                <img src="/indishare/sitemaster.nsf/logo.png" width="273" height="37">
+              </td>
+              <td style="padding-bottom: 10px; vertical-align: bottom;" colSpan="2"
+              align="right">
+                <span class="STYLE4">
+                  <a style="color: rgb(119, 136, 153); text-decoration: none;" class="nav-item-content"
+                  href="/indishare/sitemaster.nsf/(page)/HBIS?open">
+                    首页
+                  </a>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <a style="color: rgb(119, 136, 153); text-decoration: none;" href="/indishare/office.nsf/"
+                  target="_blank">
+                    协同办公
+                  </a>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <a style="color: rgb(119, 136, 153); text-decoration: none;" href="/indishare/office.nsf/(frame)/frameLeader"
+                  target="_blank">
+                    领导页面
+                  </a>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <a style="color: rgb(119, 136, 153); text-decoration: none; cursor: pointer;"
+                  onclick="fndzyj()" href="javascript:void(0)">
+                    邮件系统
+                  </a>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <a style="color: rgb(119, 136, 153); text-decoration: none;" href="/indishare/sitemaster.nsf/(page)/HBISSecond?opendocument&amp;database=hebgt/tpxw.nsf&amp;view=vwWebFlowForShow&amp;path=1&amp;flag=jtyw"
+                  target="_self">
+                    新闻
+                  </a>
+                  &nbsp;&nbsp;&nbsp;&nbsp;
+                  <a style="color: rgb(119, 136, 153); text-decoration: none;" href="/indishare/sitemaster.nsf/(page)/nkzdSecond?opendocument&amp;database=hebgt/rules.nsf&amp;view=vwWebFlowForShow&amp;path=1&amp;flag=nkzd1"
+                  target="_self">
+                    内控制度
+                  </a>
+                  &nbsp;&nbsp;&nbsp;&nbsp;
+                  <a style="color: rgb(119, 136, 153); text-decoration: none;" href="/indishare/sitemaster.nsf/(page)/ywpt"
+                  target="_self">
+                    业务平台
+                  </a>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <a style="color: rgb(119, 136, 153); text-decoration: none;" onclick="fnchangedv()"
+                  href="javascript:void(0)">
+                    子分公司
+                  </a>
+                </span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+      <td>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<table border="0" cellSpacing="0" cellPadding="0" width="100%" align="center">
+  <tbody>
+    <tr>
+      <td bgColor="#a0b2bb" height="5">
+      </td>
+    </tr>
+    <tr>
+      <td align="middle">
+        <table style="display: none;" id="zfgsdv" class="zfgstb" width="1000">
+          <tbody>
+            <tr>
+              <td>
+                <a style="color: rgb(119, 136, 153); text-decoration: none;" href="http://tgoa.tangsteel.com/indishare/sitemaster.nsf/(page)/tgmain?open"
+                target="_blank">
+                  河钢唐钢
+                </a>
+              </td>
+              <td>
+                <a style="color: rgb(119, 136, 153); text-decoration: none;" href="http://hgoa.hbisco.com/"
+                target="_blank">
+                  河钢邯钢
+                </a>
+              </td>
+              <td>
+                <a style="color: rgb(119, 136, 153); text-decoration: none;" href="http://18.0.76.153/indishare/sitemaster.nsf/(page)/startup20150418"
+                target="_blank">
+                  河钢宣钢
+                </a>
+              </td>
+              <td>
+                <a style="color: rgb(119, 136, 153); text-decoration: none;" href="http://eip.cg.com/index.asp"
+                target="_blank">
+                  河钢承钢
+                </a>
+              </td>
+              <td>
+                <a style="color: rgb(119, 136, 153); text-decoration: none;" href="http://wgoa.hbisco.com/indishare/sitemaster.nsf/(page)/wgindex"
+                target="_blank">
+                  河钢舞钢
+                </a>
+              </td>
+              <td>
+                <a style="color: rgb(119, 136, 153); text-decoration: none;" href="http://18.0.108.6/"
+                target="_blank">
+                  河钢矿业
+                </a>
+              </td>
+              <td>
+                <a style="color: rgb(119, 136, 153); text-decoration: none;" href="http://sgoa.hbisco.com/"
+                target="_blank">
+                  河钢石钢
+                </a>
+              </td>
+              <td>
+                <a style="color: rgb(119, 136, 153); text-decoration: none;" href="http://palabora.co.za/"
+                target="_blank">
+                  南非PMC公司
+                </a>
+              </td>
+              <td>
+                <a style="color: rgb(119, 136, 153); text-decoration: none;" href="/indishare/sitemaster.nsf/(page)/hgxs"
+                target="_self">
+                  河钢销售
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a style="color: rgb(119, 136, 153); text-decoration: none;" href="/indishare/sitemaster.nsf/(page)/cgzgs"
+                target="_self">
+                  河钢采购
+                </a>
+              </td>
+              <td>
+                <a style="color: rgb(119, 136, 153); text-decoration: none;" href="/indishare/sitemaster.nsf/(page)/hggy"
+                target="_self">
+                  河钢钢研
+                </a>
+              </td>
+              <td>
+                <a style="color: rgb(119, 136, 153); text-decoration: none;" href="/indishare/sitemaster.nsf/(page)/wlgs"
+                target="_self">
+                  河钢物流
+                </a>
+              </td>
+              <td>
+                <a style="color: rgb(119, 136, 153); text-decoration: none;" href="/indishare/sitemaster.nsf/(page)/hggj"
+                target="_self">
+                  河钢国际
+                </a>
+              </td>
+              <td>
+                <a style="color: rgb(119, 136, 153); text-decoration: none;" href="http://hboa.hbisco.com"
+                target="_blank">
+                  河钢衡板
+                </a>
+              </td>
+              <td>
+                <a style="color: rgb(119, 136, 153); text-decoration: none;" href="http://www.hbxg.com/zh-cn/"
+                target="_blank">
+                  河钢宣工
+                </a>
+              </td>
+              <td>
+                <a style="color: rgb(119, 136, 153); text-decoration: none;" href="/indishare/sitemaster.nsf/(page)/cwgs"
+                target="_self">
+                  河钢财务
+                </a>
+              </td>
+              <td>
+                <a style="color: rgb(119, 136, 153); text-decoration: none;" href="http://www.yshotel.com.cn/"
+                target="_blank">
+                  河钢燕山酒店
+                </a>
+              </td>
+              <td>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <td id="zftd" height="15">
+      </td>
+    </tr>
+  </tbody>
+</table>
+<table border="0" cellSpacing="0" cellPadding="0" width="1000" bgColor="#ffffff"
+align="center">
+  <tbody>
+    <tr>
+      <td class="table_photo" vAlign="bottom" rowSpan="5" width="367" align="middle">
+        <table border="0" cellSpacing="0" cellPadding="0" width="1">
+          <tbody>
+            <tr id="playbox_1">
+              <!--图片滚动-->
+            </tr>
+            <tr>
+              <td align="middle">
+                <table border="0" cellSpacing="0" cellPadding="0" width="100">
+                  <tbody>
+                    <tr>
+                      <td id="p1td" onmousemove="ChangePhoto('p1','p2','p3','p4','p5')" vAlign="bottom"
+                      align="middle">
+                        <img id="p1img" src="/indishare/sitemaster.nsf/photomore.png" width="10"
+                        height="10">
+                      </td>
+                      <td id="p2td" onmousemove="ChangePhoto('p2','p3','p4','p5','p1')" vAlign="bottom"
+                      align="middle">
+                        <img id="p2img" src="/indishare/sitemaster.nsf/photomore.png" width="15"
+                        height="15">
+                      </td>
+                      <td id="p3td" onmousemove="ChangePhoto('p3','p4','p5','p1','p2')" vAlign="bottom"
+                      align="middle">
+                        <img id="p3img" src="/indishare/sitemaster.nsf/photomore.png" width="10"
+                        height="10">
+                      </td>
+                      <td id="p4td" onmousemove="ChangePhoto('p4','p5','p1','p2','p3')" vAlign="bottom"
+                      align="middle">
+                        <img id="p4img" src="/indishare/sitemaster.nsf/photomore.png" width="10"
+                        height="10">
+                      </td>
+                      <td id="p5td" onmousemove="ChangePhoto('p5','p1','p2','p3','p4')" vAlign="bottom"
+                      align="middle">
+                        <img id="p5img" src="/indishare/sitemaster.nsf/photomore.png" width="10"
+                        height="10">
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+      <td vAlign="top" rowSpan="5" width="521">
+        <table border="0" cellSpacing="0" cellPadding="0" width="100%">
+          <tbody>
+            <tr  id="jtywtitle">
+              <td height="50" width="50%">
+                <span class="STYLE8">
+                  集团要闻
+                  <span class="STYLE9">
+                    Group News
+                  </span>
+                </span>
+              </td>
+              <td width="44%">
+              </td>
+              <td width="6%">
+                <a style="color: rgb(255, 255, 255); text-decoration: none;" href="/indishare/sitemaster.nsf/(page)/HBISSecond?opendocument&amp;database=hebgt/tpxw.nsf&amp;view=vwWebFlowForShow&amp;path=1&amp;flag=jtyw"
+                target="_blank">
+                  <img src="/indishare/sitemaster.nsf/more.png" width="15" height="15">
+                </a>
+              </td>
+            </tr>
+            <tr style="display: none;" id="spxwtitle">
+              <td height="50" width="50%">
+                <span class="STYLE8">
+                  视频新闻
+                  <span class="STYLE9">
+                    Video News
+                  </span>
+                </span>
+              </td>
+              <td width="44%">
+              </td>
+              <td width="6%">
+                <a style="color: rgb(255, 255, 255); text-decoration: none;" href="/indishare/sitemaster.nsf/(page)/HBISSecond?opendocument&amp;database=hebgt/spxw.nsf&amp;view=vwWebFlowForShow&amp;path=1&amp;flag=spxw"
+                target="_blank">
+                  <img src="/indishare/sitemaster.nsf/more.png" width="15" height="15">
+                </a>
+              </td>
+            </tr>
+            <tr style="display: none;" id="gggstitle">
+              <td height="50" width="50%">
+                <span class="STYLE8">
+                  公告公示
+                  <span class="STYLE9">
+                    Public Announcement
+                  </span>
+                </span>
+              </td>
+              <td width="44%">
+              </td>
+              <td width="6%">
+                <a style="color: rgb(255, 255, 255); text-decoration: none;" href="/indishare/sitemaster.nsf/(page)/HBISSecond?opendocument&amp;database=hebgt/ioboard.nsf&amp;view=vwWebFlowForShow&amp;path=1&amp;flag=gggs"
+                target="_blank">
+                  <img src="/indishare/sitemaster.nsf/more.png" width="15" height="15">
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td bgColor="#e1e1e1" height="1" colSpan="3">
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <table style="margin-left: -10px;" border="0" cellSpacing="0" cellPadding="0"
+        width="515" align="left">
+          <tbody>
+            <tr>
+              <td>
+                <!--集团要闻-->
+                <div style="display: none;" id="jtyw">
+                  <ul style="behavior: url(/indishare/oaresource.nsf/ulview.htc);" title="数据源jtyw1" fldACL="1" indiuldata="server=newoa.hbisco.com~~database=hebgt/tpxw.nsf~~view=vwPublicedByCatforfirstsite~~dispvw=vwPublicedByCatforfirstsite~~start=1~~count=6~~mincount=5~~ColsTitle=日期,标题~~ColsIn=$54,$66~~ColsLinkOpen=2,2~~ColsCut=10,30~~thirdpage=%thirdpage%" modified="true" jsDsName="jtyw1">
+                    <li>
+                      <span class="STYLE10">
+
+                      </span>
+                      <span class="STYLE11">
+
+                      </span>
+                    </li>
+                    <li>
+                      <span class="STYLE10">
+
+                      </span>
+                      <span class="STYLE11">
+
+                      </span>
+                    </li>
+                    <li>
+                      <span class="STYLE10">
+
+                      </span>
+                      <span class="STYLE11">
+
+                      </span>
+                    </li>
+                    <li>
+                      <span class="STYLE10">
+
+                      </span>
+                      <span class="STYLE11">
+
+                      </span>
+                    </li>
+                    <li>
+                      <span class="STYLE10">
+
+                      </span>
+                      <span class="STYLE11">
+
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+                <!--集团要闻结束-->
+                <!--视频新闻-->
+                <div style="display: none;" id="spxw">
+                  <ul style="behavior: url(/indishare/oaresource.nsf/ulview.htc);" title="数据源spxw" fldACL="1" indiuldata="server=newoa.hbisco.com~~database=hebgt/spxw.nsf~~view=vwPublicedByCatforfirstsite~~dispvw=vwPublicedByCatforfirstsite~~start=1~~count=6~~mincount=5~~ColsTitle=日期,标题~~ColsIn=$54,$66~~ColsLinkOpen=2,2~~ColsCut=10,30~~thirdpage=%thirdpage%" modified="true" jsDsName="spxw">
+                    <li>
+                      <span class="STYLE10">
+
+                      </span>
+                      <span class="STYLE11">
+
+                      </span>
+                    </li>
+                    <li>
+                      <span class="STYLE10">
+
+                      </span>
+                      <span class="STYLE11">
+
+                      </span>
+                    </li>
+                    <li>
+                      <span class="STYLE10">
+
+                      </span>
+                      <span class="STYLE11">
+
+                      </span>
+                    </li>
+                    <li>
+                      <span class="STYLE10">
+
+                      </span>
+                      <span class="STYLE11">
+
+                      </span>
+                    </li>
+                    <li>
+                      <span class="STYLE10">
+
+                      </span>
+                      <span class="STYLE11">
+
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+                <!--视频新闻结束-->
+                <!--公告公示-->
+                <div id="gggs">
+                  <ul style="behavior: url(/indishare/oaresource.nsf/ulview.htc);" title="数据源gggs3" fldACL="1" indiuldata="server=newoa.hbisco.com~~database=hebgt/ioboard.nsf~~view=vwPublicedByCatforfirstsite~~dispvw=vwPublicedByCatforfirstsite~~start=1~~count=6~~mincount=5~~ColsTitle=日期,标题~~ColsIn=$54,$66~~ColsLinkOpen=2,2~~ColsCut=10,30~~thirdpage=%thirdpage%" modified="true" jsDsName="gggs3">
+                    <li>
+                      <span class="STYLE10">
+
+                      </span>
+                      <span class="STYLE11">
+
+                      </span>
+                    </li>
+                    <li>
+                      <span class="STYLE10">
+
+                      </span>
+                      <span class="STYLE11">
+
+                      </span>
+                    </li>
+                    <li>
+                      <span class="STYLE10">
+
+                      </span>
+                      <span class="STYLE11">
+
+                      </span>
+                    </li>
+                    <li>
+                      <span class="STYLE10">
+
+                      </span>
+                      <span class="STYLE11">
+
+                      </span>
+                    </li>
+                    <li>
+                      <span class="STYLE10">
+
+                      </span>
+                      <span class="STYLE11">
+
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+      <td id="jtywjt1" vAlign="center" width="11">
+      </td>
+      <td style="display: none;" id="jtywjt" vAlign="center" width="11">
+        <img src="/indishare/sitemaster.nsf/jt.png" width="11" height="16">
+      </td>
+      <td onmousemove="changetitle('jtyw','spxw','gggs')" bgColor="#7d96a2"
+      height="60" width="101" align="middle">
+        <table border="0" cellSpacing="0" cellPadding="0" width="80">
+          <tbody>
+            <tr>
+              <td height="40" vAlign="top" align="middle">
+                <img src="/indishare/sitemaster.nsf/jtyw.png" width="40" height="40">
+              </td>
+            </tr>
+            <tr>
+              <td align="middle">
+                <span class="STYLE7">
+                  集团要闻
+                </span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <td height="1" vAlign="center" width="11">
+      </td>
+      <td height="1" align="middle">
+      </td>
+    </tr>
+    <tr>
+      <td id="spxwjt1" vAlign="center" width="11">
+      </td>
+      <td style="display: none;" id="spxwjt" vAlign="center" width="11">
+        <img src="/indishare/sitemaster.nsf/jt.png" width="11" height="16">
+      </td>
+      <td onmousemove="changetitle('spxw','gggs','jtyw')" bgColor="#7d96a2"
+      height="60" align="middle">
+        <table border="0" cellSpacing="0" cellPadding="0" width="80">
+          <tbody>
+            <tr>
+              <td height="40" vAlign="top" align="middle">
+                <img src="/indishare/sitemaster.nsf/spxw.png" width="40" height="40">
+              </td>
+            </tr>
+            <tr>
+              <td align="middle">
+                <span class="STYLE7">
+                  视频新闻
+                </span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <td height="1" vAlign="center" width="11">
+      </td>
+      <td height="1" align="middle">
+      </td>
+    </tr>
+    <tr>
+      <td style="display: none;" id="gggsjt1" vAlign="center" width="11">
+      </td>
+      <td id="gggsjt" vAlign="center" width="11">
+        <img src="/indishare/sitemaster.nsf/jt.png" width="11" height="16">
+      </td>
+      <td onmousemove="changetitle('gggs','jtyw','spxw')" bgColor="#7d96a2"
+      height="60" align="middle">
+        <table border="0" cellSpacing="0" cellPadding="0" width="80">
+          <tbody>
+            <tr>
+              <td height="40" vAlign="top" align="middle">
+                <img src="/indishare/sitemaster.nsf/gggs.png" width="39" height="39">
+              </td>
+            </tr>
+            <tr>
+              <td align="middle">
+                <span class="STYLE7">
+                  公告公示
+                </span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<table border="0" cellSpacing="0" cellPadding="0" width="1000" align="center">
+  <tbody>
+    <tr>
+      <td height="1">
+      </td>
+    </tr>
+  </tbody>
+</table>
+<table border="0" cellSpacing="0" cellPadding="0" width="1000" bgColor="#ffffff"
+align="center">
+  <tbody>
+    <tr>
+      <td onmousemove="changetitle('ggjb','zgfc','xxyd')" bgColor="#7d96a2"
+      height="60" width="101" align="middle">
+        <table border="0" cellSpacing="0" cellPadding="0" width="80">
+          <tbody>
+            <tr>
+              <td height="40" vAlign="top" align="middle">
+                <img src="/indishare/sitemaster.nsf/scdt.png" width="40" height="40">
+              </td>
+            </tr>
+            <tr>
+              <td align="middle">
+                <span class="STYLE7">
+                  市场动态
+                </span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+      <td style="display: none;" id="ggjbjt" vAlign="center" width="11">
+        <img src="/indishare/sitemaster.nsf/jt1.png" width="11" height="16">
+      </td>
+      <td id="ggjbjt1" vAlign="center" width="11">
+      </td>
+      <td vAlign="top" rowSpan="5" width="521">
+        <table border="0" cellSpacing="0" cellPadding="0" width="100%">
+          <tbody>
+            <tr style="display: none;" id="ggjbtitle">
+              <td height="50" width="50%">
+                <span class="STYLE8">
+                  市场动态
+                  <span class="STYLE9">
+                    Market Dynamics
+                  </span>
+                </span>
+              </td>
+              <td width="44%">
+              </td>
+              <td width="6%">
+                <a style="color: rgb(255, 255, 255); text-decoration: none;" href="/indishare/sitemaster.nsf/(page)/HBISSecond?opendocument&amp;database=hebgt/scdt.nsf&amp;view=vwWebFlowForShow&amp;path=1&amp;flag=scdt"
+                target="_blank" &amp;flag="scdt">
+                  <img src="/indishare/sitemaster.nsf/more.png" width="15" height="15">
+                </a>
+              </td>
+            </tr>
+            <tr id="zgfctitle">
+              <td height="50" width="50%">
+                <span class="STYLE8">
+                  生产动态
+                  <span class="STYLE9">
+                    Production Dynamics
+                  </span>
+                </span>
+              </td>
+              <td width="44%">
+              </td>
+              <td width="6%">
+                <a style="color: rgb(255, 255, 255); text-decoration: none;" href="/indishare/sitemaster.nsf/(page)/HBISSecond?opendocument&amp;database=hebgt/shengcdt.nsf&amp;view=vwWebFlowForShow&amp;path=1&amp;flag=scdt1"
+                target="_blank">
+                  <img src="/indishare/sitemaster.nsf/more.png" width="15" height="15">
+                </a>
+              </td>
+            </tr>
+            <tr style="display: none;" id="xxydtitle">
+              <td height="50" width="50%">
+                <span class="STYLE8">
+                  <span class="STYLE9">
+                  </span>
+                </span>
+              </td>
+              <td width="44%">
+              </td>
+              <td width="6%">
+              </td>
+            </tr>
+            <tr>
+              <td bgColor="#e1e1e1" height="1" colSpan="3">
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <table style="margin-left: -10px;" border="0" cellSpacing="0" cellPadding="0"
+        width="515" align="left">
+          <tbody>
+            <tr>
+              <td>
+                <!--市场动态-->
+                <div style="display: none;" id="ggjb">
+                  <ul style="behavior: url(/indishare/oaresource.nsf/ulview.htc);" title="数据源shicdt" fldACL="1" indiuldata="server=newoa.hbisco.com~~database=hebgt/scdt.nsf~~view=vwPublicedByCatforfirstsite~~dispvw=vwPublicedByCatforfirstsite~~start=1~~count=6~~mincount=5~~ColsTitle=日期,标题~~ColsIn=$54,$66~~ColsLinkOpen=2,2~~ColsCut=10,30~~thirdpage=%thirdpage%" modified="true" jsDsName="shicdt">
+                    <li>
+                      <span class="STYLE10">
+
+                      </span>
+                      <span class="STYLE11">
+
+                      </span>
+                    </li>
+                    <li>
+                      <span class="STYLE10">
+
+                      </span>
+                      <span class="STYLE11">
+
+                      </span>
+                    </li>
+                    <li>
+                      <span class="STYLE10">
+
+                      </span>
+                      <span class="STYLE11">
+
+                      </span>
+                    </li>
+                    <li>
+                      <span class="STYLE10">
+
+                      </span>
+                      <span class="STYLE11">
+
+                      </span>
+                    </li>
+                    <li>
+                      <span class="STYLE10">
+
+                      </span>
+                      <span class="STYLE11">
+
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+                <!--市场动态结束-->
+                <!--生产动态-->
+                <div id="zgfc">
+                  <ul style="behavior: url(/indishare/oaresource.nsf/ulview.htc);" title="数据源scdt" fldACL="1" indiuldata="server=newoa.hbisco.com~~database=hebgt/shengcdt.nsf~~view=vwPublicedByCatforfirstsite~~dispvw=vwPublicedByCatforfirstsite~~start=1~~count=6~~mincount=5~~ColsTitle=日期,标题~~ColsIn=$54,$66~~ColsLinkOpen=2,2~~ColsCut=10,30~~thirdpage=%thirdpage%" modified="true" jsDsName="scdt">
+                    <li>
+                      <span class="STYLE10">
+
+                      </span>
+                      <span class="STYLE11">
+
+                      </span>
+                    </li>
+                    <li>
+                      <span class="STYLE10">
+
+                      </span>
+                      <span class="STYLE11">
+
+                      </span>
+                    </li>
+                    <li>
+                      <span class="STYLE10">
+
+                      </span>
+                      <span class="STYLE11">
+
+                      </span>
+                    </li>
+                    <li>
+                      <span class="STYLE10">
+
+                      </span>
+                      <span class="STYLE11">
+
+                      </span>
+                    </li>
+                    <li>
+                      <span class="STYLE10">
+
+                      </span>
+                      <span class="STYLE11">
+
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+                <!--生产动态结束-->
+                <!--公告公示-->
+                <div style="display: none;" id="xxyd">
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+      <td rowSpan="5" width="367" align="middle">
+        <div id="spxx" class="table_tv">
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td height="1" vAlign="center" width="11">
+      </td>
+      <td height="1" align="middle">
+      </td>
+    </tr>
+    <tr>
+      <td onmousemove="changetitle('zgfc','ggjb','xxyd')" bgColor="#7d96a2"
+      height="60" align="middle">
+        <table border="0" cellSpacing="0" cellPadding="0" width="80">
+          <tbody>
+            <tr>
+              <td height="40" vAlign="top" align="middle">
+                <img src="/indishare/sitemaster.nsf/shengcdt.png" width="40" height="40">
+              </td>
+            </tr>
+            <tr>
+              <td align="middle">
+                <span class="STYLE7">
+                  生产动态
+                </span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+      <td id="zgfcjt" vAlign="center" width="11">
+        <img src="/indishare/sitemaster.nsf/jt1.png" width="11" height="16">
+      </td>
+      <td style="display: none;" id="zgfcjt1" vAlign="center" width="11">
+      </td>
+    </tr>
+    <tr>
+      <td height="1" vAlign="center" width="11">
+      </td>
+      <td height="1" align="middle">
+      </td>
+    </tr>
+    <tr>
+      <td bgColor="#7d96a2" height="60" align="middle">
+        <table border="0" cellSpacing="0" cellPadding="0" width="80">
+          <tbody>
+            <tr>
+              <td height="40" vAlign="top" align="middle">
+              </td>
+            </tr>
+            <tr>
+              <td align="middle">
+                <span class="STYLE7">
+                </span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+      <td style="display: none;" id="xxydjt" vAlign="center" width="11">
+        <img src="/indishare/sitemaster.nsf/jt1.png" width="11" height="16">
+      </td>
+      <td id="xxydjt1" vAlign="center" width="11">
+      </td>
+    </tr>
+  </tbody>
+</table>
+<table border="0" cellSpacing="0" cellPadding="0" width="1000" align="center">
+  <tbody>
+    <tr>
+      <td height="15">
+      </td>
+      <td>
+      </td>
+      <td>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<table border="0" cellSpacing="0" cellPadding="0" width="100%" bgColor="#ffffff"
+align="center">
+  <tbody>
+    <tr>
+      <td>
+      </td>
+      <td align="middle">
+        <table border="0" cellSpacing="0" cellPadding="0" width="1000">
+          <tbody>
+            <tr>
+              <td height="68" width="141" align="middle">
+                <img src="/indishare/sitemaster.nsf/hgb.png" width="110" height="57">
+              </td>
+              <td width="85" align="middle">
+                <a style="color: rgb(255, 255, 255); text-decoration: none;" href="/indishare/sitemaster.nsf/(page)/hgbSecond?opendocument&amp;database=hebgt/jtdzb.nsf&amp;view=vwWebFlowForShow&amp;path=1&amp;flag=jtyw"
+                target="_blank">
+                  <span class="STYLE12">
+                    集团版
+                  </span>
+                </a>
+              </td>
+              <td width="85" align="middle">
+                <a style="color: rgb(255, 255, 255); text-decoration: none;" href="/indishare/sitemaster.nsf/(page)/hgbSecond?opendocument&amp;database=hebgt/tgb.nsf&amp;view=vwWebFlowForShow&amp;path=1&amp;flag=spxw"
+                target="_blank">
+                  <span class="STYLE12">
+                    唐钢版
+                  </span>
+                </a>
+              </td>
+              <td width="85" align="middle">
+                <a style="color: rgb(255, 255, 255); text-decoration: none;" href="/indishare/sitemaster.nsf/(page)/hgbSecond?opendocument&amp;database=hebgt/hgb.nsf&amp;view=vwWebFlowForShow&amp;path=1&amp;flag=gggs"
+                target="_blank">
+                  <span class="STYLE12">
+                    邯钢版
+                  </span>
+                </a>
+              </td>
+              <td width="85" align="middle">
+                <a style="color: rgb(255, 255, 255); text-decoration: none;" href="/indishare/sitemaster.nsf/(page)/hgbSecond?opendocument&amp;database=hebgt/xgb.nsf&amp;view=vwWebFlowForShow&amp;path=1&amp;flag=scdt"
+                target="_blank">
+                  <span class="STYLE12">
+                    宣钢版
+                  </span>
+                </a>
+              </td>
+              <td width="85" align="middle">
+                <a style="color: rgb(255, 255, 255); text-decoration: none;" href="/indishare/sitemaster.nsf/(page)/hgbSecond?opendocument&amp;database=hebgt/cgb.nsf&amp;view=vwWebFlowForShow&amp;path=1&amp;flag=scdt1"
+                target="_blank">
+                  <span class="STYLE12">
+                    承钢版
+                  </span>
+                </a>
+              </td>
+              <td width="85" align="middle">
+                <a style="color: rgb(255, 255, 255); text-decoration: none;" href="/indishare/sitemaster.nsf/(page)/hgbSecond?opendocument&amp;database=hebgt/wgb.nsf&amp;view=vwWebFlowForShow&amp;path=1&amp;flag=scdt2"
+                target="_blank">
+                  <span class="STYLE12">
+                    舞钢版
+                  </span>
+                </a>
+              </td>
+              <td width="85" align="middle">
+                <a style="color: rgb(255, 255, 255); text-decoration: none;" href="/indishare/sitemaster.nsf/(page)/hgbSecond?opendocument&amp;database=hebgt/kyb.nsf&amp;view=vwWebFlowForShow&amp;path=1&amp;flag=scdt3"
+                target="_blank">
+                  <span class="STYLE12">
+                    矿业版
+                  </span>
+                </a>
+              </td>
+              <td width="85" align="middle">
+                <a style="color: rgb(255, 255, 255); text-decoration: none;" href="/indishare/sitemaster.nsf/(page)/hgbSecond?opendocument&amp;database=hebgt/sgb.nsf&amp;view=vwWebFlowForShow&amp;path=1&amp;flag=scdt4"
+                target="_blank">
+                  <span class="STYLE12">
+                    石钢版
+                  </span>
+                </a>
+              </td>
+              <td width="85" align="middle">
+                <a style="color: rgb(255, 255, 255); text-decoration: none;" href="/indishare/sitemaster.nsf/(page)/hgbSecond?opendocument&amp;database=hebgt/hbb.nsf&amp;view=vwWebFlowForShow&amp;path=1&amp;flag=scdt5"
+                target="_blank">
+                  <span class="STYLE12">
+                    衡钢版
+                  </span>
+                </a>
+              </td>
+              <td width="85" align="middle">
+                <a style="color: rgb(255, 255, 255); text-decoration: none;" href="/indishare/sitemaster.nsf/(page)/hgbSecond?opendocument&amp;database=hebgt/xhg.nsf&amp;view=vwWebFlowForShow&amp;path=1&amp;flag=scdt6"
+                target="_blank">
+                  <span class="STYLE12">
+                    宣工版
+                  </span>
+                </a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+      <td>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<table border="0" cellSpacing="0" cellPadding="0" width="100%" bgColor="#879fac"
+align="center">
+  <tbody>
+    <tr>
+      <td>
+      </td>
+      <td align="middle">
+        <table border="0" cellSpacing="0" cellPadding="0" width="1000">
+          <tbody>
+            <tr>
+              <td class="STYLE7" align="middle">
+                友情
+                <br>
+                链接
+              </td>
+              <td align="left">
+                <img src="/indishare/sitemaster.nsf/lk.png" width="16" height="65">
+              </td>
+              <td class="STYLE15" align="middle">
+                <a style="color: rgb(255, 255, 255); text-decoration: none;" href="http://www.sdpc.gov.cn/"
+                target=" _blank">
+                  国家发改委
+                </a>
+                <br>
+                <a style="color: rgb(255, 255, 255); text-decoration: none;" href="http://www.hbdrc.gov.cn/"
+                target=" _blank">
+                  河北省发改委
+                </a>
+              </td>
+              <td align="middle">
+                <img src="/indishare/sitemaster.nsf/fg.png" width="1" height="42">
+              </td>
+              <td class="STYLE15" align="middle">
+                <a style="color: rgb(255, 255, 255); text-decoration: none;" href="http://www.miit.gov.cn/"
+                target=" _blank">
+                  国家工信部
+                </a>
+                <br>
+                <a style="color: rgb(255, 255, 255); text-decoration: none;" href="http://www.hbsa.gov.cn/"
+                target=" _blank">
+                  河北省国资委
+                </a>
+              </td>
+              <td align="middle">
+                <img src="/indishare/sitemaster.nsf/fg.png" width="1" height="42">
+              </td>
+              <td align="middle">
+                <span class="STYLE15">
+                  <a style="color: rgb(255, 255, 255); text-decoration: none;" href="http://www.most.gov.cn/"
+                  target=" _blank">
+                    国家科技部
+                  </a>
+                </span>
+                <span class="STYLE15">
+                  <br>
+                  <a style="color: rgb(255, 255, 255); text-decoration: none;" href="http://www.hebnews.cn/"
+                  target=" _blank">
+                    河北新闻网
+                  </a>
+                </span>
+              </td>
+              <td align="middle">
+                <img src="/indishare/sitemaster.nsf/fg.png" width="1" height="42">
+              </td>
+              <td align="middle">
+                <span class="STYLE15">
+                  <a style="color: rgb(255, 255, 255); text-decoration: none;" href="http://www.sasac.gov.cn/"
+                  target=" _blank">
+                    国务院国资委
+                  </a>
+                  <br>
+                  <a style="color: rgb(255, 255, 255); text-decoration: none;" href="http://www.ansteelgroup.com/"
+                  target=" _blank">
+                    鞍钢集团
+                  </a>
+                </span>
+              </td>
+              <td align="middle">
+                <img src="/indishare/sitemaster.nsf/fg.png" width="1" height="42">
+              </td>
+              <td align="middle">
+                <span class="STYLE15">
+                  <a style="color: rgb(255, 255, 255); text-decoration: none;" href="http://www.people.com.cn/"
+                  target=" _blank">
+                    人民网
+                  </a>
+                </span>
+                <span class="STYLE15">
+                  <br>
+                  <a style="color: rgb(255, 255, 255); text-decoration: none;" href="http://www.baosteel.com/"
+                  target=" _blank">
+                    宝钢集团
+                  </a>
+                </span>
+              </td>
+              <td align="middle">
+                <img src="/indishare/sitemaster.nsf/fg.png" width="1" height="42">
+              </td>
+              <td align="middle">
+                <span class="STYLE15">
+                  <a style="color: rgb(255, 255, 255); text-decoration: none;" href="http://www.worldsteel.org/zh/"
+                  target=" _blank">
+                    世界钢协
+                  </a>
+                  <br>
+                  <a style="color: rgb(255, 255, 255); text-decoration: none;" href="http://www.wisco.com.cn/"
+                  target=" _blank">
+                    武钢集团
+                  </a>
+                </span>
+              </td>
+              <td align="middle">
+                <img src="/indishare/sitemaster.nsf/fg.png" width="1" height="42">
+              </td>
+              <td align="middle">
+                <span class="STYLE15">
+                  <a style="color: rgb(255, 255, 255); text-decoration: none;" href="http://www.chinaisa.org.cn/"
+                  target=" _blank">
+                    中国钢铁工业协会
+                  </a>
+                  <br>
+                  <a style="color: rgb(255, 255, 255); text-decoration: none;" href="http://www.shougang.com.cn/"
+                  target=" _blank">
+                    首钢集团
+                  </a>
+                </span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+      <td>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<table border="0" cellSpacing="0" cellPadding="0" width="100%" bgColor="#ffffff"
+align="center">
+  <tbody>
+    <tr>
+      <td>
+      </td>
+      <td height="80" align="middle">
+        <span class="STYLE14">
+          Copyright 2016 河钢铁集团有限公司 All Rights Reserved.
+          <br>
+          建议使用 IE11版本,1600X900分辨率浏览使用.
+        </span>
+      </td>
+      <td>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>

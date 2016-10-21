@@ -1,0 +1,1197 @@
+﻿<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>河钢集团办公系统</title>
+<style type="text/css">
+<!--
+a {
+font-family: 微软雅黑;
+color: #6d8695;
+}
+li {
+list-style-type: none;
+display: list-item;
+text-align: -webkit-match-parent;
+height:38px;
+margin-left: -30px;
+}
+body {
+margin-left: 0px;
+margin-top: 0px;
+margin-right: 0px;
+margin-bottom: 0px;
+background-image: url(/indishare/sitemaster.nsf/bg.png);
+background-repeat: no-repeat;
+background-position: center 110px;
+background-size:cover;
+}
+body,td,th {
+font-family: 微软雅黑;
+}
+.STYLE1 {
+color: #8aa0ae;
+font-size: 14px;
+}
+.STYLE2 {
+color: #566e7d;
+font-size: 14px;
+}
+.STYLE3 {
+color: #e6000a;
+font-size: 14px;
+}
+.STYLE4 {
+font-size: 16px;
+color: #879eac;
+font-weight: 500;
+}
+.STYLE5 {
+color: #313a3f;
+font-size: 28px;
+font-weight: bold;
+}
+.STYLE6 {
+font-size: 20px;
+color: ##313a3f;
+font-style: italic;
+font-family: Arial, Helvetica, sans-serif;
+}
+.STYLE7 {
+font-size: 16px;
+color: #FFFFFF;
+}
+.table_photo {
+height: 235px;
+width: 300px;
+background-repeat: no-repeat;
+background-position: center center;
+padding:15px;
+}
+.STYLE8 {
+font-size: 20px;
+color: #313a3f;
+}
+.STYLE9 {font-size: 16px}
+.STYLE10 a {
+font-size: 14px;
+color: #FFFFFF;
+line-height: 22px;
+background-color: rgb(150, 165, 180);
+display: inline-block;
+border-radius: 3px 3px 3px 3px;
+padding:3px;
+}
+.STYLE11 {
+font-size: 14px;
+color: #6d8695;
+padding-left: 30px;
+}
+.table_tv {
+padding-top: 15px;
+padding-bottom: 15px;
+padding-left: 5px;
+padding-right: 5px;
+}
+.STYLE12 {
+font-size: 18px;
+color: #566e7d;
+font-weight: 500;
+}
+.STYLE14 {
+font-size: 14px;
+color: #b0b0b0;
+line-height: 26px;
+}
+.STYLE15 {
+font-size: 14px;
+color: #FFFFFF;
+line-height: 22px;
+}
+a {
+font-family: 微软雅黑;
+}
+a:link {
+text-decoration: none;
+}
+a:visited {
+text-decoration: none;
+}
+a:hover {
+text-decoration: none;
+}
+a:active {
+text-decoration: none;
+}
+.zfgsdv{
+position: fixed;
+top: 78px;
+width:100%;
+z-index: 100;
+}
+.zfgstb{
+background-color: #FFFFFF;
+font-size: 16px;
+}
+.zfgstb td{
+background-color: #C8CFD1;
+color: red;
+width: 110px;
+text-align: center;
+}
+-->
+</style>
+<script type="text/javascript" src="http://hq.sinajs.cn/list=sz000709" charset="gb2312"></script>
+<script type="text/javascript" src="http://hq.sinajs.cn/list=sz000923" charset="gb2312"></script>
+<script type="text/javascript">
+function ChangePhoto(p1,p2,p3,p4,p5){
+dojo.byId(p1+"img").src="/indishare/sitemaster.nsf/photomore.png";
+if(dojo.byId(p1)){
+dojo.style(dojo.byId(p1),"display","");
+}
+dojo.byId(p1+"img").width=15;
+dojo.byId(p1+"img").height=15;
+dojo.byId(p2+"img").src="/indishare/sitemaster.nsf/photomore1.png";
+if(dojo.byId(p2)){
+dojo.style(dojo.byId(p2),"display","none");
+}
+dojo.byId(p2+"img").width=10;
+dojo.byId(p2+"img").height=10;
+dojo.byId(p3+"img").src="/indishare/sitemaster.nsf/photomore1.png";
+if(dojo.byId(p3)){
+dojo.style(dojo.byId(p3),"display","none");
+}
+dojo.byId(p3+"img").width=10;
+dojo.byId(p3+"img").height=10;
+dojo.byId(p4+"img").src="/indishare/sitemaster.nsf/photomore1.png";
+if(dojo.byId(p4)){
+dojo.style(dojo.byId(p4),"display","none");
+}
+dojo.byId(p4+"img").width=10;
+dojo.byId(p4+"img").height=10;
+dojo.byId(p5+"img").src="/indishare/sitemaster.nsf/photomore1.png";
+if(dojo.byId(p5)){
+dojo.style(dojo.byId(p5),"display","none");
+}
+dojo.byId(p5+"img").width=10;
+dojo.byId(p5+"img").height=10;
+}
+/*上方图片轮循*/
+var arr = ["p1img","p2img","p3img","p4img","p5img"];
+var index = 0;
+var fnRunPic = function(){
+var objTd = dojo.byId(arr[(index++)%5]).parentElement;objTd.onmousemove();
+}
+//dojo.addOnLoad(function(){
+window.setInterval("fnRunPic()","2000");
+function changetitle(title1,title2,title3){
+dojo.style(dojo.byId(title1+"title"),"display","");
+dojo.style(dojo.byId(title2+"title"),"display","none");
+dojo.style(dojo.byId(title3+"title"),"display","none");
+dojo.style(dojo.byId(title1),"display","");
+dojo.style(dojo.byId(title2),"display","none");
+dojo.style(dojo.byId(title3),"display","none");
+dojo.style(dojo.byId(title1+"jt"),"display","");
+dojo.style(dojo.byId(title1+"jt1"),"display","none");
+dojo.style(dojo.byId(title2+"jt"),"display","none");
+dojo.style(dojo.byId(title2+"jt1"),"display","");
+dojo.style(dojo.byId(title3+"jt"),"display","none");
+dojo.style(dojo.byId(title3+"jt1"),"display","");
+}
+function changetitle1(title1,title2){
+dojo.style(dojo.byId(title1+"title"),"display","");
+dojo.style(dojo.byId(title2+"title"),"display","none");
+dojo.style(dojo.byId(title1),"display","");
+dojo.style(dojo.byId(title2),"display","none");
+dojo.style(dojo.byId(title1+"jt"),"display","");
+dojo.style(dojo.byId(title1+"jt1"),"display","none");
+dojo.style(dojo.byId(title2+"jt"),"display","none");
+dojo.style(dojo.byId(title2+"jt1"),"display","");
+}
+function aaa(){
+if(dojo.query("[name^=Photo1]")[0].value){
+dojo.place(dojo.query("[name^=Photo1]")[0].value,dojo.byId("playbox_1"),"first");
+}
+
+}
+function fnchangedv(){
+if(document.getElementById("zfgsdv").style.display=="none"){
+document.getElementById("zfgsdv").style.display="";
+}else{
+document.getElementById("zfgsdv").style.display="none";
+}
+} 
+</script>
+
+<body onLoad="aaa()">
+  <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%">
+    <TBODY>
+      <TR>
+        <TD>
+        </TD>
+        <TD align=middle>
+          <TABLE border=0 cellSpacing=0 cellPadding=0 width=1000>
+            <TBODY>
+              <TR>
+                <TD width=297>
+                </TD>
+                <TD width=393>
+                </TD>
+                <TD vAlign=top width=310>
+                  <TABLE border=0 cellSpacing=0 cellPadding=0 width=405>
+                    <TBODY>
+                      <TR>
+                        <TD height=35 width=33>
+                        </TD>
+                        <TD width=106 align=right>
+                          <A href="/indishare/sitemaster.nsf/(page)/HBIS?open" target=_self>
+                            <SPAN class=STYLE2>
+                              集团网站
+                            </SPAN>
+                          </A>
+                        </TD>
+                        <TD width=137 align=right>
+                          <SPAN class=STYLE1>
+                            <IMG src="/indishare/sitemaster.nsf/user.png" width=13 height=15>
+                            <SPAN id=logininfo>
+                            </SPAN>
+                            ，您好！
+                            <A style="COLOR: rgb(119,136,153); TEXT-DECORATION: none" href="/names.nsf?logout">
+                              [退出]
+                            </A>
+                          </SPAN>
+                        </TD>
+                      </TR>
+                    </TBODY>
+                  </TABLE>
+                </TD>
+              </TR>
+              <TR>
+                <TD height=60 align=left>
+                  <IMG src="/indishare/sitemaster.nsf/logo.png" width=273 height=37>
+                </TD>
+                <TD style="PADDING-BOTTOM: 10px; VERTICAL-ALIGN: bottom" colSpan=2 align=left>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <SPAN class=STYLE4>
+                    <A style="COLOR: rgb(119,136,153); TEXT-DECORATION: none" 
+                    href="/indishare/sitemaster.nsf/(page)/yxpt" target=_self>
+                      首页
+                    </A>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <A style="COLOR: rgb(119,136,153); TEXT-DECORATION: none" href="/indishare/sitemaster.nsf/(page)/yxptSecond?opendocument&amp;database=hebgt/yxpt/jgxx.nsf&amp;view=vwWebFlowForShow&amp;path=1&amp;flag=jgxx&amp;type_xm=yxsj"
+                    target=_self>
+                      营销数据
+                    </A>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <A style="COLOR: rgb(119,136,153); TEXT-DECORATION: none" href="/indishare/sitemaster.nsf/(page)/yxptSecond?opendocument&amp;database=hebgt/yxpt/hgxx.nsf&amp;view=vwWebFlowForShow&amp;path=1&amp;flag=hgxx&amp;type_xm=hgxx"
+                    target=_self>
+                      宏观信息
+                    </A>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <A style="COLOR: rgb(119,136,153); TEXT-DECORATION: none" href="/indishare/sitemaster.nsf/(page)/yxptSecond?opendocument&amp;database=hebgt/yxpt/hyfx.nsf&amp;view=vwWebFlowForShow&amp;path=1&amp;flag=hyfx&amp;type_xm=hyxx"
+                    target=_self>
+                      行业信息
+                    </A>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <A style="COLOR: rgb(119,136,153); TEXT-DECORATION: none" href="/indishare/sitemaster.nsf/(page)/yxptSecond?opendocument&amp;database=hebgt/yxpt/gcdt.nsf&amp;view=vwWebFlowForShow&amp;path=1&amp;flag=gcdt&amp;type_xm=jzxx"
+                    target=_self>
+                     竞争信息
+                    </A>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <A style="COLOR: rgb(119,136,153); TEXT-DECORATION: none" href="/indishare/sitemaster.nsf/(page)/yxptSecond?opendocument&amp;database=hebgt/yxpt/syhy.nsf&amp;view=vwWebFlowForShow&amp;path=1&amp;flag=syhy&amp;type_xm=sxyhy"
+                    target=_self>
+                      上下游行业
+                    </A>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <A style="COLOR: rgb(119,136,153); TEXT-DECORATION: none" href="/indishare/sitemaster.nsf/(page)/yxptSecond?opendocument&amp;database=hebgt/yxpt/dbfx.nsf&amp;view=vwWebFlowForShow&amp;path=1&amp;flag=dbfx&amp;type_xm=fxbg"
+                    target=_self>
+                      分析报告
+                    </A>
+                  </SPAN>
+                </TD>
+              </TR>
+            </TBODY>
+          </TABLE>
+        </TD>
+        <TD>
+        </TD>
+      </TR>
+    </TBODY>
+  </TABLE>
+  <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%" align=center>
+    <TBODY>
+      <TR>
+        <TD bgColor=#a0b2bb height=5>
+        </TD>
+      </TR>
+      <TR>
+        <TD style="BACKGROUND-IMAGE: url(/indishare/sitemaster.nsf/bg.png)" height=15>
+        </TD>
+      </TR>
+    </TBODY>
+  </TABLE>
+  <TABLE border=0 cellSpacing=0 cellPadding=0 width=1000 bgColor=#ffffff
+  align=center>
+    <TBODY>
+      <TR>
+        <TD class=table_photo vAlign=bottom rowSpan=5 width=367 align=middle>
+          <TABLE border=0 cellSpacing=0 cellPadding=0 width=1>
+            <TBODY>
+              <TR id=playbox_1>
+                <!--图片滚动-->
+              </TR>
+              <TR>
+                <TD align=middle>
+                  <TABLE border=0 cellSpacing=0 cellPadding=0 width=100>
+                    <TBODY>
+                      <TR>
+                        <TD id=p1td onmousemove="ChangePhoto('p1','p2','p3','p4','p5')" vAlign=bottom
+                        align=middle>
+                          <IMG id=p1img src="/indishare/sitemaster.nsf/photomore.png" width=15 height=15>
+                        </TD>
+                        <TD id=p2td onmousemove="ChangePhoto('p2','p3','p4','p5','p1')" vAlign=bottom
+                        align=middle>
+                          <IMG id=p2img src="/indishare/sitemaster.nsf/photomore1.png" width=10
+                          height=10>
+                        </TD>
+                        <TD id=p3td onmousemove="ChangePhoto('p3','p4','p5','p1','p2')" vAlign=bottom
+                        align=middle>
+                          <IMG id=p3img src="/indishare/sitemaster.nsf/photomore1.png" width=10
+                          height=10>
+                        </TD>
+                        <TD id=p4td onmousemove="ChangePhoto('p4','p5','p1','p2','p3')" vAlign=bottom
+                        align=middle>
+                          <IMG id=p4img src="/indishare/sitemaster.nsf/photomore1.png" width=10
+                          height=10>
+                        </TD>
+                        <TD id=p5td onmousemove="ChangePhoto('p5','p1','p2','p3','p4')" vAlign=bottom
+                        align=middle>
+                          <IMG id=p5img src="/indishare/sitemaster.nsf/photomore1.png" width=10
+                          height=10>
+                        </TD>
+                      </TR>
+                    </TBODY>
+                  </TABLE>
+                </TD>
+              </TR>
+            </TBODY>
+          </TABLE>
+        </TD>
+        <TD vAlign=top rowSpan=5 width=521>
+          <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%">
+            <TBODY>
+              <TR id=jtywtitle>
+                <TD height=50 width="70%">
+                  <SPAN class=STYLE8>
+                    营销数据
+                    <SPAN class=STYLE9>
+                      Marketing Data
+                    </SPAN>
+                  </SPAN>
+                </TD>
+                <TD width="24%">
+                </TD>
+                <TD width="6%">
+                  <A style="COLOR: rgb(255,255,255); TEXT-DECORATION: none" href="/indishare/sitemaster.nsf/(page)/yxptSecond?opendocument&amp;database=hebgt/yxpt/jgxx.nsf&amp;view=vwWebFlowForShow&amp;path=1&amp;flag=jgxx&amp;type_xm=yxsj"
+                  target=_blank>
+                    <IMG src="/indishare/sitemaster.nsf/more.png" width=15 height=15>
+                  </A>
+                </TD>
+              </TR>
+              <TR style="DISPLAY: none" id=spxwtitle>
+                <TD height=50 width="70%">
+                  <SPAN class=STYLE8>
+                    竞争信息
+                    <SPAN class=STYLE9>
+                      Competition Information
+                    </SPAN>
+                  </SPAN>
+                </TD>
+                <TD width="24%">
+                </TD>
+                <TD width="6%">
+                  <A style="COLOR: rgb(255,255,255); TEXT-DECORATION: none" href="/indishare/sitemaster.nsf/(page)/yxptSecond?opendocument&amp;database=hebgt/yxpt/gcdt.nsf&amp;view=vwWebFlowForShow&amp;path=1&amp;flag=gcdt&amp;type_xm=jzxx"
+                  target=_blank>
+                    <IMG src="/indishare/sitemaster.nsf/more.png" width=15 height=15>
+                  </A>
+                </TD>
+              </TR>
+              <TR style="DISPLAY: none" id=gggstitle>
+                <TD height=50 width="70%">
+                  <SPAN class=STYLE8>
+                    分析报告
+                    <SPAN class=STYLE9>
+                      Analysis Report
+                    </SPAN>
+                  </SPAN>
+                </TD>
+                <TD width="24%">
+                </TD>
+                <TD width="6%">
+                  <A style="COLOR: rgb(255,255,255); TEXT-DECORATION: none" href="/indishare/sitemaster.nsf/(page)/yxptSecond?opendocument&amp;database=hebgt/yxpt/dbfx.nsf&amp;view=vwWebFlowForShow&amp;path=1&amp;flag=dbfx&amp;type_xm=fxbg"
+                  target=_blank>
+                    <IMG src="/indishare/sitemaster.nsf/more.png" width=15 height=15>
+                  </A>
+                </TD>
+              </TR>
+              <TR>
+                <TD bgColor=#e1e1e1 height=1 colSpan=3>
+                </TD>
+              </TR>
+            </TBODY>
+          </TABLE>
+          <TABLE border=0 cellSpacing=0 cellPadding=0 width=515 align="left" style="margin-left: -10px;">
+            <TBODY>
+              <TR>
+                <TD>
+                  <!--集团要闻-->
+                  <DIV id=jtyw>
+                    <UL style="behavior: url(/indishare/oaresource.nsf/ulview.htc);" title="数据源yxptjgxx"
+                  fldACL="1" indiuldata="server=newoa.hbisco.com~~database=hebgt/yxpt/jgxx.nsf~~view=vwPublicedByCatforfirstsite~~dispvw=vwPublicedByCatforfirstsite~~start=1~~count=5~~mincount=5~~ColsTitle=日期,标题~~ColsIn=$54,$66~~ColsLinkOpen=2,2~~ColsCut=10,30~~thirdpage=%thirdpage%~~cat=2~~category=1code"
+                  modified="true" jsDsName="yxptjgxx" >
+                      <LI>
+                        <SPAN class=STYLE10>
+                        </SPAN>
+                        <SPAN class=STYLE11>
+                        </SPAN>
+                      </LI>
+                      <LI>
+                        <SPAN class=STYLE10>
+                        </SPAN>
+                        <SPAN class=STYLE11>
+                        </SPAN>
+                      </LI>
+                      <LI>
+                        <SPAN class=STYLE10>
+                        </SPAN>
+                        <SPAN class=STYLE11>
+                        </SPAN>
+                      </LI>
+                      <LI>
+                        <SPAN class=STYLE10>
+                        </SPAN>
+                        <SPAN class=STYLE11>
+                        </SPAN>
+                      </LI>
+                      <LI>
+                        <SPAN class=STYLE10>
+                        </SPAN>
+                        <SPAN class=STYLE11>
+                        </SPAN>
+                      </LI>
+                    </UL>
+                  </DIV>
+                  <!--集团要闻结束-->
+                  <!--视频新闻-->
+                  <DIV style="DISPLAY: none" id=spxw>
+                    <UL style="behavior: url(/indishare/oaresource.nsf/ulview.htc);" title="数据源yxptgcdt"
+                  fldACL="1" indiuldata="server=newoa.hbisco.com~~database=hebgt/yxpt/gcdt.nsf~~view=vwPublicedByCatforfirstsite~~dispvw=vwPublicedByCatforfirstsite~~start=1~~count=5~~mincount=5~~ColsTitle=日期,标题~~ColsIn=$54,$66~~ColsLinkOpen=2,2~~ColsCut=10,30~~thirdpage=%thirdpage%~~cat=2~~category=1code"
+                  modified="true" jsDsName="yxptgcdt">
+                      <LI>
+                        <SPAN class=STYLE10>
+                        </SPAN>
+                        <SPAN class=STYLE11>
+                        </SPAN>
+                      </LI>
+                      <LI>
+                        <SPAN class=STYLE10>
+                        </SPAN>
+                        <SPAN class=STYLE11>
+                        </SPAN>
+                      </LI>
+                      <LI>
+                        <SPAN class=STYLE10>
+                        </SPAN>
+                        <SPAN class=STYLE11>
+                        </SPAN>
+                      </LI>
+                      <LI>
+                        <SPAN class=STYLE10>
+                        </SPAN>
+                        <SPAN class=STYLE11>
+                        </SPAN>
+                      </LI>
+                      <LI>
+                        <SPAN class=STYLE10>
+                        </SPAN>
+                        <SPAN class=STYLE11>
+                        </SPAN>
+                      </LI>
+                    </UL>
+                  </DIV>
+                  <!--视频新闻结束-->
+                  <!--公告公示-->
+                  <DIV style="DISPLAY: none" id=gggs>
+                    <UL style="behavior: url(/indishare/oaresource.nsf/ulview.htc);" title="数据源yxptdbfx"
+                  fldACL="1" indiuldata="server=newoa.hbisco.com~~database=hebgt/yxpt/dbfx.nsf~~view=vwPublicedByCatforfirstsite~~dispvw=vwPublicedByCatforfirstsite~~start=1~~count=5~~mincount=5~~ColsTitle=日期,标题~~ColsIn=$54,$66~~ColsLinkOpen=2,2~~ColsCut=10,30~~thirdpage=%thirdpage%~~cat=2~~category=1code"
+                  modified="true" jsDsName="yxptdbfx">
+                      <LI>
+                        <SPAN class=STYLE10>
+                        </SPAN>
+                        <SPAN class=STYLE11>
+                        </SPAN>
+                      </LI>
+                      <LI>
+                        <SPAN class=STYLE10>
+                        </SPAN>
+                        <SPAN class=STYLE11>
+                        </SPAN>
+                      </LI>
+                      <LI>
+                        <SPAN class=STYLE10>
+                        </SPAN>
+                        <SPAN class=STYLE11>
+                        </SPAN>
+                      </LI>
+                      <LI>
+                        <SPAN class=STYLE10>
+                        </SPAN>
+                        <SPAN class=STYLE11>
+                        </SPAN>
+                      </LI>
+                      <LI>
+                        <SPAN class=STYLE10>
+                        </SPAN>
+                        <SPAN class=STYLE11>
+                        </SPAN>
+                      </LI>
+                    </UL>
+                  </DIV>
+                </TD>
+              </TR>
+            </TBODY>
+          </TABLE>
+        </TD>
+        <TD style="DISPLAY: none" id=jtywjt1 vAlign=center width=11>
+        </TD>
+        <TD id=jtywjt vAlign=center width=11>
+          <IMG src="/indishare/sitemaster.nsf/jt.png" width=11 height=16>
+        </TD>
+        <TD onmousemove="changetitle('jtyw','spxw','gggs')" bgColor=#7d96a2 height=60
+        width=101 align=middle>
+          <TABLE border=0 cellSpacing=0 cellPadding=0 width=80>
+            <TBODY>
+              <TR>
+                <TD height=40 vAlign=top align=middle>
+                  <IMG src="/indishare/sitemaster.nsf/jtyw.png" width=40 height=40>
+                </TD>
+              </TR>
+              <TR>
+                <TD align=middle>
+                  <SPAN class=STYLE7>
+                    营销数据
+                  </SPAN>
+                </TD>
+              </TR>
+            </TBODY>
+          </TABLE>
+        </TD>
+      </TR>
+      <TR>
+        <TD height=1 vAlign=center width=11>
+        </TD>
+        <TD height=1 align=middle>
+        </TD>
+      </TR>
+      <TR>
+        <TD id=spxwjt1 vAlign=center width=11>
+        </TD>
+        <TD style="DISPLAY: none" id=spxwjt vAlign=center width=11>
+          <IMG src="/indishare/sitemaster.nsf/jt.png" width=11 height=16>
+        </TD>
+        <TD onmousemove="changetitle('spxw','gggs','jtyw')" bgColor=#7d96a2 height=60
+        align=middle>
+          <TABLE border=0 cellSpacing=0 cellPadding=0 width=80>
+            <TBODY>
+              <TR>
+                <TD height=40 vAlign=top align=middle>
+                  <IMG src="/indishare/sitemaster.nsf/spxw.png" width=40 height=40>
+                </TD>
+              </TR>
+              <TR>
+                <TD align=middle>
+                  <SPAN class=STYLE7>
+                    竞争信息
+                  </SPAN>
+                </TD>
+              </TR>
+            </TBODY>
+          </TABLE>
+        </TD>
+      </TR>
+      <TR>
+        <TD height=1 vAlign=center width=11>
+        </TD>
+        <TD height=1 align=middle>
+        </TD>
+      </TR>
+      <TR>
+        <TD id=gggsjt1 vAlign=center width=11>
+        </TD>
+        <TD style="DISPLAY: none" id=gggsjt vAlign=center width=11>
+          <IMG src="/indishare/sitemaster.nsf/jt.png" width=11 height=16>
+        </TD>
+        <TD onmousemove="changetitle('gggs','jtyw','spxw')" bgColor=#7d96a2 height=60
+        align=middle>
+          <TABLE border=0 cellSpacing=0 cellPadding=0 width=80>
+            <TBODY>
+              <TR>
+                <TD height=40 vAlign=top align=middle>
+                  <IMG src="/indishare/sitemaster.nsf/gggs.png" width=39 height=39>
+                </TD>
+              </TR>
+              <TR>
+                <TD align=middle>
+                  <SPAN class=STYLE7>
+                    分析报告
+                  </SPAN>
+                </TD>
+              </TR>
+            </TBODY>
+          </TABLE>
+        </TD>
+      </TR>
+    </TBODY>
+  </TABLE>
+  <TABLE border=0 cellSpacing=0 cellPadding=0 width=1000 align=center>
+    <TBODY>
+      <TR>
+        <TD height=1>
+        </TD>
+      </TR>
+    </TBODY>
+  </TABLE>
+  <TABLE border=0 cellSpacing=0 cellPadding=0 width=1000 bgColor=#ffffff
+  align=center>
+    <TBODY>
+      <TR>
+        <TD onmousemove="changetitle('ggjb','zgfc','xxyd')" bgColor=#7d96a2 height=60
+        width=101 align=middle>
+          <TABLE border=0 cellSpacing=0 cellPadding=0 width=80>
+            <TBODY>
+              <TR>
+                <TD height=40 vAlign=top align=middle>
+                  <IMG src="/indishare/sitemaster.nsf/scdt.png" width=40 height=40>
+                </TD>
+              </TR>
+              <TR>
+                <TD align=middle>
+                  <SPAN class=STYLE7>
+                    宏观信息
+                  </SPAN>
+                </TD>
+              </TR>
+            </TBODY>
+          </TABLE>
+        </TD>
+        <TD id=ggjbjt vAlign=center width=11>
+          <IMG src="/indishare/sitemaster.nsf/jt1.png" width=11 height=16>
+        </TD>
+        <TD style="DISPLAY: none" id=ggjbjt1 vAlign=center width=11>
+        </TD>
+        <TD vAlign=top rowSpan=5 width=521>
+          <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%">
+            <TBODY>
+              <TR id=ggjbtitle>
+                <TD height=50 width="70%">
+                  <SPAN class=STYLE8>
+                    宏观信息
+                    <SPAN class=STYLE9>
+                      Macro Information
+                    </SPAN>
+                  </SPAN>
+                </TD>
+                <TD width="24%">
+                </TD>
+                <TD width="6%">
+                  <A style="COLOR: rgb(255,255,255); TEXT-DECORATION: none" href="/indishare/sitemaster.nsf/(page)/yxptSecond?opendocument&amp;database=hebgt/yxpt/hgxx.nsf&amp;view=vwWebFlowForShow&amp;path=1&amp;flag=hgxx&amp;type_xm=hgxx"
+                  target=_blank>
+                    <IMG src="/indishare/sitemaster.nsf/more.png" width=15 height=15>
+                  </A>
+                </TD>
+              </TR>
+              <TR style="DISPLAY: none" id=zgfctitle>
+                <TD height=50 width="70%">
+                  <SPAN class=STYLE8>
+                    行业信息
+                    <SPAN class=STYLE9>
+                      Industry Information
+                    </SPAN>
+                  </SPAN>
+                </TD>
+                <TD width="24%">
+                </TD>
+                <TD width="6%">
+                  <A style="COLOR: rgb(255,255,255); TEXT-DECORATION: none" href="/indishare/sitemaster.nsf/(page)/yxptSecond?opendocument&amp;database=hebgt/yxpt/hyfx.nsf&amp;view=vwWebFlowForShow&amp;path=1&amp;flag=hyfx&amp;type_xm=hyxx"
+                  target=_blank>
+                    <IMG src="/indishare/sitemaster.nsf/more.png" width=15 height=15>
+                  </A>
+                </TD>
+              </TR>
+              <TR style="DISPLAY: none" id=xxydtitle>
+                <TD height=50 width="70%">
+                  <SPAN class=STYLE8>
+                    下游行业
+                    <SPAN class=STYLE9>
+                      Downstream Industry
+                    </SPAN>
+                  </SPAN>
+                </TD>
+                <TD width="24%">
+                </TD>
+                <TD width="6%">
+                  <A style="COLOR: rgb(255,255,255); TEXT-DECORATION: none" href="/indishare/sitemaster.nsf/(page)/yxptSecond?opendocument&amp;database=hebgt/yxpt/xyhy.nsf&amp;view=vwWebFlowForShow&amp;path=1&amp;flag=xyhy&amp;type_xm=sxyhy"
+                  target=_blank>
+                    <IMG src="/indishare/sitemaster.nsf/more.png" width=15 height=15>
+                  </A>
+                </TD>
+              </TR>
+              <TR style="DISPLAY: none" id=xxydtitle>
+                <TD height=50 width="50%">
+                  <SPAN class=STYLE8>
+                    <SPAN class=STYLE9>
+                    </SPAN>
+                  </SPAN>
+                </TD>
+                <TD width="44%">
+                </TD>
+                <TD width="6%">
+                </TD>
+              </TR>
+              <TR>
+                <TD bgColor=#e1e1e1 height=1 colSpan=3>
+                </TD>
+              </TR>
+            </TBODY>
+          </TABLE>
+          <TABLE border=0 cellSpacing=0 cellPadding=0 width=515 align="left" style="margin-left: -10px;" >
+            <TBODY>
+              <TR>
+                <TD>
+                  <!--市场动态-->
+                  <DIV id=ggjb>
+                    <UL style="behavior: url(/indishare/oaresource.nsf/ulview.htc);" title="数据源yxpthgxx"
+                  fldACL="1" indiuldata="server=newoa.hbisco.com~~database=hebgt/yxpt/hgxx.nsf~~view=vwPublicedByCatforfirstsite~~dispvw=vwPublicedByCatforfirstsite~~start=1~~count=5~~mincount=5~~ColsTitle=日期,标题~~ColsIn=$54,$66~~ColsLinkOpen=2,2~~ColsCut=10,30~~thirdpage=%thirdpage%~~cat=2~~category=1code"
+                  modified="true" jsDsName="yxpthgxx">
+                      <LI>
+                        <SPAN class=STYLE10>
+                        </SPAN>
+                        <SPAN class=STYLE11>
+                        </SPAN>
+                      </LI>
+                      <LI>
+                        <SPAN class=STYLE10>
+                        </SPAN>
+                        <SPAN class=STYLE11>
+                        </SPAN>
+                      </LI>
+                      <LI>
+                        <SPAN class=STYLE10>
+                        </SPAN>
+                        <SPAN class=STYLE11>
+                        </SPAN>
+                      </LI>
+                      <LI>
+                        <SPAN class=STYLE10>
+                        </SPAN>
+                        <SPAN class=STYLE11>
+                        </SPAN>
+                      </LI>
+                      <LI>
+                        <SPAN class=STYLE10>
+                        </SPAN>
+                        <SPAN class=STYLE11>
+                        </SPAN>
+                      </LI>
+                    </UL>
+                  </DIV>
+                  <!--市场动态结束-->
+                  <!--生产动态-->
+                  <DIV style="DISPLAY: none" id=zgfc>
+                    <UL style="behavior: url(/indishare/oaresource.nsf/ulview.htc);" title="数据源yxpthyfx"
+                  fldACL="1" indiuldata="server=newoa.hbisco.com~~database=hebgt/yxpt/hyfx.nsf~~view=vwPublicedByCatforfirstsite~~dispvw=vwPublicedByCatforfirstsite~~start=1~~count=5~~mincount=5~~ColsTitle=日期,标题~~ColsIn=$54,$66~~ColsLinkOpen=2,2~~ColsCut=10,30~~thirdpage=%thirdpage%~~cat=2~~category=1code"
+                  modified="true" jsDsName="yxpthyfx">
+                      <LI>
+                        <SPAN class=STYLE10>
+                        </SPAN>
+                        <SPAN class=STYLE11>
+                        </SPAN>
+                      </LI>
+                      <LI>
+                        <SPAN class=STYLE10>
+                        </SPAN>
+                        <SPAN class=STYLE11>
+                        </SPAN>
+                      </LI>
+                      <LI>
+                        <SPAN class=STYLE10>
+                        </SPAN>
+                        <SPAN class=STYLE11>
+                        </SPAN>
+                      </LI>
+                      <LI>
+                        <SPAN class=STYLE10>
+                        </SPAN>
+                        <SPAN class=STYLE11>
+                        </SPAN>
+                      </LI>
+                      <LI>
+                        <SPAN class=STYLE10>
+                        </SPAN>
+                        <SPAN class=STYLE11>
+                        </SPAN>
+                      </LI>
+                    </UL>
+                  </DIV>
+                  <!--生产动态结束-->
+                  <!--公告公示-->
+                  <DIV style="DISPLAY: none" id=xxyd>
+                    <UL style="behavior: url(/indishare/oaresource.nsf/ulview.htc);" title="数据源yxptxyhy"
+                  fldACL="1" indiuldata="server=newoa.hbisco.com~~database=hebgt/yxpt/xyhy.nsf~~view=vwPublicedByCatforfirstsite~~dispvw=vwPublicedByCatforfirstsite~~start=1~~count=5~~mincount=5~~ColsTitle=日期,标题~~ColsIn=$54,$66~~ColsLinkOpen=2,2~~ColsCut=10,30~~thirdpage=%thirdpage%~~cat=2~~category=1code"
+                  modified="true" jsDsName="yxptxyhy">
+                      <LI>
+                        <SPAN class=STYLE10>
+                        </SPAN>
+                        <SPAN class=STYLE11>
+                        </SPAN>
+                      </LI>
+                      <LI>
+                        <SPAN class=STYLE10>
+                        </SPAN>
+                        <SPAN class=STYLE11>
+                        </SPAN>
+                      </LI>
+                      <LI>
+                        <SPAN class=STYLE10>
+                        </SPAN>
+                        <SPAN class=STYLE11>
+                        </SPAN>
+                      </LI>
+                      <LI>
+                        <SPAN class=STYLE10>
+                        </SPAN>
+                        <SPAN class=STYLE11>
+                        </SPAN>
+                      </LI>
+                      <LI>
+                        <SPAN class=STYLE10>
+                        </SPAN>
+                        <SPAN class=STYLE11>
+                        </SPAN>
+                      </LI>
+                    </UL>
+                  </DIV>
+                </TD>
+              </TR>
+            </TBODY>
+          </TABLE>
+        </TD>
+        <TD rowSpan=5 width=367 align=middle>
+          <DIV id=spxx class=table_tv>
+          </DIV>
+        </TD>
+      </TR>
+      <TR>
+        <TD height=1 vAlign=center width=11>
+        </TD>
+        <TD height=1 align=middle>
+        </TD>
+      </TR>
+      <TR>
+        <TD onmousemove="changetitle('zgfc','ggjb','xxyd')" bgColor=#7d96a2 height=60
+        align=middle>
+          <TABLE border=0 cellSpacing=0 cellPadding=0 width=80>
+            <TBODY>
+              <TR>
+                <TD height=40 vAlign=top align=middle>
+                  <IMG src="/indishare/sitemaster.nsf/shengcdt.png" width=40 height=40>
+                </TD>
+              </TR>
+              <TR>
+                <TD align=middle>
+                  <SPAN class=STYLE7>
+                   行业信息
+                  </SPAN>
+                </TD>
+              </TR>
+            </TBODY>
+          </TABLE>
+        </TD>
+        <TD style="DISPLAY: none" id=zgfcjt vAlign=center width=11>
+          <IMG src="/indishare/sitemaster.nsf/jt1.png" width=11 height=16>
+        </TD>
+        <TD id=zgfcjt1 vAlign=center width=11>
+        </TD>
+      </TR>
+      <TR>
+        <TD height=1 vAlign=center width=11>
+        </TD>
+        <TD height=1 align=middle>
+        </TD>
+      </TR>
+      <TR>
+        <TD onmousemove="changetitle('xxyd','ggjb','zgfc')" bgColor=#7d96a2 height=60 align=middle>
+          <TABLE border=0 cellSpacing=0 cellPadding=0 width=80>
+            <TBODY>
+              <TR>
+                <TD height=40 vAlign=top align=middle>
+                <IMG src="/indishare/sitemaster.nsf/dgzz.png" width=40 height=40>
+                </TD>
+              </TR>
+              <TR>
+                <TD align=middle>
+                  <SPAN class=STYLE7>
+                  下游行业
+                  </SPAN>
+                </TD>
+              </TR>
+            </TBODY>
+          </TABLE>
+        </TD>
+        <TD style="DISPLAY: none" id=xxydjt vAlign=center width=11>
+          <IMG src="/indishare/sitemaster.nsf/jt1.png" width=11 height=16>
+        </TD>
+        <TD id=xxydjt1 vAlign=center width=11>
+        </TD>
+      </TR>
+    </TBODY>
+  </TABLE>
+  <TABLE border=0 cellSpacing=0 cellPadding=0 width=1000 align=center>
+    <TBODY>
+      <TR>
+        <TD height=15>
+        </TD>
+        <TD>
+        </TD>
+        <TD>
+        </TD>
+      </TR>
+    </TBODY>
+  </TABLE>
+  <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%" bgColor=#ffffff
+  align=center>
+    <TBODY>
+      <TR>
+        <TD>
+        </TD>
+        <TD align=middle>
+          <TABLE border=0 cellSpacing=0 cellPadding=0 width=1000>
+            <TBODY>
+              <TR>
+                <TD height=68 width=141 align=middle>
+                  <IMG src="/indishare/sitemaster.nsf/hgb.png" width=110 height=57>
+                </TD>
+                <TD width=85 align=middle>
+                  <A style="COLOR: rgb(255,255,255); TEXT-DECORATION: none" href="/indishare/sitemaster.nsf/(page)/hgbSecond?opendocument&amp;database=hebgt/jtdzb.nsf&amp;view=vwWebFlowForShow&amp;path=1&amp;flag=jtyw"
+                  target=_blank>
+                    <SPAN class=STYLE12>
+                      集团版
+                    </SPAN>
+                  </A>
+                </TD>
+                <TD width=85 align=middle>
+                  <A style="COLOR: rgb(255,255,255); TEXT-DECORATION: none" href="/indishare/sitemaster.nsf/(page)/hgbSecond?opendocument&amp;database=hebgt/tgb.nsf&amp;view=vwWebFlowForShow&amp;path=1&amp;flag=spxw"
+                  target=_blank>
+                    <SPAN class=STYLE12>
+                      唐钢版
+                    </SPAN>
+                  </A>
+                </TD>
+                <TD width=85 align=middle>
+                  <A style="COLOR: rgb(255,255,255); TEXT-DECORATION: none" href="/indishare/sitemaster.nsf/(page)/hgbSecond?opendocument&amp;database=hebgt/hgb.nsf&amp;view=vwWebFlowForShow&amp;path=1&amp;flag=gggs"
+                  target=_blank>
+                    <SPAN class=STYLE12>
+                      邯钢版
+                    </SPAN>
+                  </A>
+                </TD>
+                <TD width=85 align=middle>
+                  <A style="COLOR: rgb(255,255,255); TEXT-DECORATION: none" href="/indishare/sitemaster.nsf/(page)/hgbSecond?opendocument&amp;database=hebgt/xgb.nsf&amp;view=vwWebFlowForShow&amp;path=1&amp;flag=scdt"
+                  target=_blank>
+                    <SPAN class=STYLE12>
+                      宣钢版
+                    </SPAN>
+                  </A>
+                </TD>
+                <TD width=85 align=middle>
+                  <A style="COLOR: rgb(255,255,255); TEXT-DECORATION: none" href="/indishare/sitemaster.nsf/(page)/hgbSecond?opendocument&amp;database=hebgt/cgb.nsf&amp;view=vwWebFlowForShow&amp;path=1&amp;flag=scdt1"
+                  target=_blank>
+                    <SPAN class=STYLE12>
+                      承钢版
+                    </SPAN>
+                  </A>
+                </TD>
+                <TD width=85 align=middle>
+                  <A style="COLOR: rgb(255,255,255); TEXT-DECORATION: none" href="/indishare/sitemaster.nsf/(page)/hgbSecond?opendocument&amp;database=hebgt/wgb.nsf&amp;view=vwWebFlowForShow&amp;path=1&amp;flag=scdt2"
+                  target=_blank>
+                    <SPAN class=STYLE12>
+                      舞钢版
+                    </SPAN>
+                  </A>
+                </TD>
+                <TD width=85 align=middle>
+                  <A style="COLOR: rgb(255,255,255); TEXT-DECORATION: none" href="/indishare/sitemaster.nsf/(page)/hgbSecond?opendocument&amp;database=hebgt/kyb.nsf&amp;view=vwWebFlowForShow&amp;path=1&amp;flag=scdt3"
+                  target=_blank>
+                    <SPAN class=STYLE12>
+                      矿业版
+                    </SPAN>
+                  </A>
+                </TD>
+                <TD width=85 align=middle>
+                  <A style="COLOR: rgb(255,255,255); TEXT-DECORATION: none" href="/indishare/sitemaster.nsf/(page)/hgbSecond?opendocument&amp;database=hebgt/sgb.nsf&amp;view=vwWebFlowForShow&amp;path=1&amp;flag=scdt4"
+                  target=_blank>
+                    <SPAN class=STYLE12>
+                      石钢版
+                    </SPAN>
+                  </A>
+                </TD>
+                <TD width=85 align=middle>
+                  <A style="COLOR: rgb(255,255,255); TEXT-DECORATION: none" href="/indishare/sitemaster.nsf/(page)/hgbSecond?opendocument&amp;database=hebgt/hbb.nsf&amp;view=vwWebFlowForShow&amp;path=1&amp;flag=scdt5"
+                  target=_blank>
+                    <SPAN class=STYLE12>
+                      衡钢版
+                    </SPAN>
+                  </A>
+                </TD>
+                <TD width=85 align=middle>
+                  <A style="COLOR: rgb(255,255,255); TEXT-DECORATION: none" href="/indishare/sitemaster.nsf/(page)/hgbSecond?opendocument&amp;database=hebgt/xhg.nsf&amp;view=vwWebFlowForShow&amp;path=1&amp;flag=scdt6"
+                  target=_blank>
+                    <SPAN class=STYLE12>
+                      宣工版
+                    </SPAN>
+                  </A>
+                </TD>
+              </TR>
+            </TBODY>
+          </TABLE>
+        </TD>
+        <TD>
+        </TD>
+      </TR>
+    </TBODY>
+  </TABLE>
+  <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%" bgColor=#879fac
+  align=center>
+    <TBODY>
+      <TR>
+        <TD>
+        </TD>
+        <TD align=middle>
+          <TABLE border=0 cellSpacing=0 cellPadding=0 width=1000>
+            <TBODY>
+              <TR>
+                <TD class=STYLE7 align=middle>
+                  友情
+                  <BR>
+                  链接
+                </TD>
+                <TD align=left>
+                  <IMG src="/indishare/sitemaster.nsf/lk.png" width=16 height=65>
+                </TD>
+                <TD class=STYLE15 align=middle>
+                  <A style="COLOR: rgb(255,255,255); TEXT-DECORATION: none" href="http://www.chinaisa.org.cn/"
+                  target=" _blank">
+                    中钢协
+                  </A>
+                  <BR>
+                  <A style="COLOR: rgb(255,255,255); TEXT-DECORATION: none" href="http://www.steelhome.cn/"
+                  target=" _blank">
+                    钢之家
+                  </A>
+                </TD>
+                <TD align=middle>
+                  <IMG src="/indishare/sitemaster.nsf/fg.png" width=1 height=42>
+                </TD>
+                <TD class=STYLE15 align=middle>
+                  <A style="COLOR: rgb(255,255,255); TEXT-DECORATION: none" href="http://www.mysteel.com/"
+                  target=" _blank">
+                    我的钢铁
+                  </A>
+                  <BR>
+                  <A style="COLOR: rgb(255,255,255); TEXT-DECORATION: none" href="http://www.bsteel.com.cn/"
+                  target=" _blank">
+                    东方钢铁
+                  </A>
+                </TD>
+                <TD align=middle>
+                  <IMG src="/indishare/sitemaster.nsf/fg.png" width=1 height=42>
+                </TD>
+                <TD class=STYLE15 align=middle>
+                  <A style="COLOR: rgb(255,255,255); TEXT-DECORATION: none" href="http://www.lgmi.com/"
+                  target=" _blank">
+                   兰格钢铁网
+                  </A>
+                  <BR>
+                  <A style="COLOR: rgb(255,255,255); TEXT-DECORATION: none" href="http://www.custeel.com/"
+                  target=" _blank">
+                    中国联合钢铁网
+                  </A>
+                </TD>
+                <TD align=middle>
+                  <IMG src="/indishare/sitemaster.nsf/fg.png" width=1 height=42>
+                </TD>
+                <TD class=STYLE15 align=middle>
+                  <A style="COLOR: rgb(255,255,255); TEXT-DECORATION: none" href="http://www.csteelnews.com/"
+                  target=" _blank">
+                    中国钢铁新闻网
+                  </A>
+                  <BR>
+                  <A style="COLOR: rgb(255,255,255); TEXT-DECORATION: none" href="http://www.shfe.com.cn/"
+                  target=" _blank">
+                    上海期货交易所
+                  </A>
+                </TD>
+                <TD align=middle>
+                  <IMG src="/indishare/sitemaster.nsf/fg.png" width=1 height=42>
+                </TD>
+                <TD class=STYLE15 align=middle>
+                  <A style="COLOR: rgb(255,255,255); TEXT-DECORATION: none" href="http://www.dce.com.cn/"
+                  target=" _blank">
+                    大连商品交易所
+                  </A>
+                  <BR>
+                  <A style="COLOR: rgb(255,255,255); TEXT-DECORATION: none" href="http://www.czce.com.cn/"
+                  target=" _blank">
+                    郑州商品交易所
+                  </A>
+                </TD>
+                <TD align=middle>
+                  <IMG src="/indishare/sitemaster.nsf/fg.png" width=1 height=42>
+                </TD>
+                <TD class=STYLE15 align=middle>
+                  <A style="COLOR: rgb(255,255,255); TEXT-DECORATION: none" href="http://www.y-e.cn/"
+                  target=" _blank">
+                    中国冶金网
+                  </A>
+                  <BR>
+                  <A style="COLOR: rgb(255,255,255); TEXT-DECORATION: none" href="http://www.hbsa.gov.cn/"
+                  target=" _blank">
+                    河北省国资委
+                  </A>
+                </TD>
+              </TR>
+            </TBODY>
+          </TABLE>
+        </TD>
+        <TD>
+        </TD>
+      </TR>
+    </TBODY>
+  </TABLE>
+  <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%" bgColor=#ffffff
+  align=center>
+    <TBODY>
+      <TR>
+        <TD>
+        </TD>
+        <TD height=80 align=middle>
+          <SPAN class=STYLE14>
+            Copyright 2016 河钢铁集团有限公司 All Rights Reserved.
+            <BR>
+            建议使用 IE11版本,1600X900分辨率浏览使用.
+          </SPAN>
+        </TD>
+        <TD>
+        </TD>
+      </TR>
+    </TBODY>
+  </TABLE>
+  </INDIBODY>
+
